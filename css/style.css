@@ -84,7 +84,7 @@
     }
 
     .backgroundMain {
-        background-image: url(/img/indexBackground.jpg);
+        background-image: url(../img/indexBackground.jpg);
         height: 100%;
         width: 100%;
         background-size: cover;
