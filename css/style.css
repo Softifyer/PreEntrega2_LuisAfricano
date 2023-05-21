@@ -1,0 +1,231 @@
+/* ============================= */
+   /* Inicio CSS Reset */
+    html {
+        font-size: 62.5%;
+    }
+
+    p {
+        font-size: 2rem;
+        /* Referencia 20px */
+    }
+
+    * {
+        Margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+        height: 100vh;
+    }
+
+    /* Fin CSS Reset */
+
+/* ============================= */
+
+    /* Inicio CSS Header */
+
+    .header{
+        background-color: #363940;
+        height: 5rem;
+    }
+
+    nav {
+        height: 100%;
+        position: sticky;
+    }
+
+        /* Inicio CSS Li Container */
+
+        .liContainer {
+            display: flex;
+            height: 100%;
+            justify-content: end;
+            align-items: center;
+            margin-right: 20rem;
+            justify-content: space-evenly;
+            list-style-type: none;
+        }
+
+        .liContainer li a {
+            text-decoration: none;
+            color: #a9a9a9;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+        }
+
+        .liContainer li a:hover {
+            color: #ffffff;
+        }
+
+        .logoContainer {
+            height: 2.5rem;
+            width: 3rem;
+            padding-right: 50rem;
+            padding-left: 15rem;
+        }
+
+        .logo {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Fin CSS Li Container */
+
+    /* Fin CSS Header */
+
+/* ============================= */
+
+    /* Inicio CSS Main */
+    
+    h1, h2, h3 {
+        text-align: center;
+        color: #ffffff;
+    }
+
+    .backgroundMain {
+        background-image: url(/img/indexBackground.jpg);
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-repeat: round;
+        background-attachment: fixed;
+    }
+
+    .tituloMain h1 {
+        font-size: 5.5rem;
+        padding-bottom: 1rem;
+        text-transform: uppercase;
+    }
+    .tituloMain h2 {
+        font-size: 4rem;        
+        padding-bottom: 1rem;
+    }
+    .tituloMain p {
+        font-size: 2rem;
+        color: #ffffff;
+        text-align: center;
+        padding-bottom: 4rem;
+    }
+
+    .tituloMain {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .backgroundMain, .tituloMain {
+        height: 50rem;
+    }
+
+    .conoceme {
+        background: none;
+        border: 0.2rem solid #ffffff;
+        font-size: 1.4rem;
+        font-weight: 400;
+        padding: 0.8rem 1.2rem;
+        touch-action: manipulation;
+        cursor: pointer;
+        color: #ffffff;
+    }
+
+    .conoceme:hover {
+        background-color: #ffffff;
+        color: #363940;
+    }
+    
+
+    /* Fin CSS Main */
+
+/* ============================= */
+
+    /* Inicio CSS Descarga de CV */
+
+    .sectionInfo {
+        background: #ffffff;
+    }
+
+    .descargaCV {
+        color: #363940;
+        padding: 3rem;
+        height: 15rem;
+    } 
+
+    .descargaCV h2{
+        text-align: center;
+        font-size: 3rem;
+        padding: 2.5rem;
+        color: #363940;
+    }
+
+    .descargaCV p{
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
+    .descargaCV a{
+        color: #000000;
+        font-size: 2rem;
+        padding: 1rem 1rem 1rem 1rem;
+        text-align: center;
+    }
+
+    /* Fin CSS Descarga de CV */
+
+/* ============================= */
+
+    /* Inicio CSS Formulario */
+
+    .formulario {
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
+    .botonFormulario {
+        color: #363940;
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        text-align: center;
+        background: none;
+        border-color: #a9a9a9;
+    }
+
+    /* Fin CSS Formulario */
+
+/* ============================= */
+
+    /* Inicio CSS Footer */
+
+    .footerStyle {
+        background-color: #363940;
+        height: 6.7rem;
+        display: flex;
+        justify-content: right;
+    }
+
+    .footerStyle .liContainer li a {
+        margin-right: 5rem;
+    }
+
+    .copyright {
+        max-height: 6.7rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .footerStyle article p{
+        color: #ffffff;
+        display: flex;
+        font-size: 1.2rem;
+        padding-right: 31rem;
+    }
+
+        /* Inicio CSS Iconos RRSS */
+        .fa-brands {
+            font-size: 2.5rem;
+            color: #ffffff;
+        }
+        /* Fin CSS Iconos RRSS */
+
+    /* Fin CSS Footer */
