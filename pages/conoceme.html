@@ -21,8 +21,13 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/814afa84d2.js" crossorigin="anonymous"></script>
 
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
+
 </head>
 
 <body>
@@ -30,18 +35,26 @@
     <!-- Inicio Header -->
     <header class="header">
         <!-- Inicio NavBar -->
-        <nav>
-            <!-- Inicio Menú -->
-            <ul class="liContainer">
-                <li class="logoContainer"><a href="../index.html"><img class="logo" src="../img/Softify-logo.png"
-                            alt="Logo Softify"></a></li>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./conoceme.html">Conóceme</a></li>
-                <li><a href="./experiencia.html">Experiencia</a></li>
-                <li><a href="./filosofia.html">Filosofía</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-            <!-- Fin Menú -->
+        <nav class="navbar navbar-expand-lg justify-content-end">
+            <div class="container-fluid logoContainer">
+                <a class="navbar-brand logo" href="../index.html"><img class="d-inline-block align-content-center logo"
+                        src="../img/Softify-logo.png" alt="Logo Softify"><span class="navbar-text">Ing. Luis
+                        Africano</span></a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 liContainer">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/conoceme.html">Conóceme</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/experiencia.html">Experiencia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/filosofia.html">Filosofía</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
         </nav>
         <!-- Fin NavBar -->
     </header>
@@ -49,140 +62,163 @@
 
     <!-- Inicio Main -->
     <main>
-        <!-- Inicio Descarga -->
-        <section>
-            <article>
-                <h2>Lorem</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </article>
-            <article>
-                <a href="#"><button class=""></button></a>
+        <!-- Inicio Conoceme -->
+        <section class="seccionConoceme">
+            <article class="container-fluid col-lg-4 col-md-4 col-sm-4 seccionConocemeTitulo">
+                <h2>Conóceme</h2>
+                <div class="divisor"></div>
+                <p>Información Curricular</p>
             </article>
         </section>
-        <!-- Fin Descarga -->
+        <section class="descarga">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9 descargaCv text-start">
+                        <h3>Descarga mi CV</h3>
+                        <p>Estas a un saludo de contactar con un profesional que no solo ama lo que hace y lo disfruta,
+                            sino que también se esfuerza por lograr que la tecnología marque un punto y aparte en cada
+                            proyecto.</p>
+                    </div>
+                    <div class="col-md-3 botonDescarga">
+                        <a class="botonDescargaCV" href="../cv/CV%20Luis%20Africano%202023.pdf" target="#" role="button"
+                            download="CV Luis Africano 2023.pdf">Descargar</a>
+                    </div>
+        </section>
+        <!-- Fin Conoceme -->
     </main>
     <!-- Fin Main -->
 
     <!-- Inicio ¿Quién Soy? -->
-    <section>
-        <!-- Inicio Información 1 -->
-        <article>
-            <article>
-                <img src="" alt="" srcset="">
-            </article>
-            <article>
-                <h3>Lorem, ipsum dolor.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas doloremque sequi quisquam, minima
-                    in
-                    quos quia asperiores delectus amet vero.
-                </p>
-            </article>
-        </article>
-        <!-- Fin Información 1 -->
+    <section class="quienSoy">
+        <div class="container">
+            <div class="row">
+                <article class="col-md-3 col-sm-6 cardQuienSoy">
+                    <span class="iconoQuienSoy">
+                        <i class="fa-regular fa-user"></i>
+                    </span>
+                    <article class="infoQuienSoy">
+                        <h4>¿Quién y que soy?</h4>
+                        <p>Soy Ingeniero en Sistemas, 100% apasionado de la tecnología, por eso me considero un
+                            privilegiado que hace lo que le gusta para vivir.</p>
+                    </article>
+                </article>
 
-        <!-- Inicio Información 2 -->
-        <article>
-            <article>
-                <img src="" alt="" srcset="">
-            </article>
-            <article>
-                <h3>Lorem, ipsum dolor.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas doloremque sequi quisquam, minima
-                    in
-                    quos quia asperiores delectus amet vero.
-                </p>
-            </article>
-        </article>
-        <!-- Fin Información 2 -->
+                <article class="col-md-3 col-sm-6 cardQuienSoy">
+                    <span class="iconoQuienSoy">
+                        <i class="fa-regular fa-gem"></i>
+                    </span>
+                    <article class="infoQuienSoy">
+                        <h4>¿Que hago?</h4>
+                        <p>Solucionar de la manera más simple y con el menor impacto posible cualquier reto tecnológico
+                            que presente.</p>
+                    </article>
+                </article>
 
-        <!-- Inicio Información 3 -->
-        <article>
-            <article>
-                <img src="" alt="" srcset="">
-            </article>
-            <article>
-                <h3>Lorem, ipsum dolor.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas doloremque sequi quisquam, minima
-                    in
-                    quos quia asperiores delectus amet vero.
-                </p>
-            </article>
-        </article>
-        <!-- Fin Información 3 -->
+                <article class="col-md-3 col-sm-6 cardQuienSoy">
+                    <span class="iconoQuienSoy">
+                        <i class="fa-regular fa-heart"></i>
+                    </span>
+                    <article class="infoQuienSoy">
+                        <h4>¿Por que lo hago?</h4>
+                        <p>Siempre he pensado que la inventiva, la constante y acelerada evolución de los mercados y la
+                            tecnología han sido la piedra angular del progreso.</p>
+                    </article>
+                </article>
 
-        <!-- Inicio Información 4 -->
-        <article>
-            <article>
-                <img src="" alt="" srcset="">
-            </article>
-            <article>
-                <h3>Lorem, ipsum dolor.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas doloremque sequi quisquam, minima
-                    in
-                    quos quia asperiores delectus amet vero.
-                </p>
-            </article>
-        </article>
-        <!-- Fin Información 4 -->
+                <article class="col-md-3 col-sm-6 cardQuienSoy">
+                    <span class="iconoQuienSoy">
+                        <i class="fa-regular fa-clock"></i>
+                    </span>
+                    <article class="infoQuienSoy">
+                        <h4>¿Desde cuando lo hago?</h4>
+                        <p>Desde mi adolescencia mi pasión por la tecnología ha venido creciendo de forma exponencial
+                            con cada avance tecnológico.</p>
+                    </article>
+                </article>
 
+            </div> <!-- /.row -->
+        </div> <!-- /.container -->
     </section>
     <!-- Fin ¿Quién Soy? -->
 
     <!-- Inicio Habilidades -->
-    <section>
-        <!-- Inicio Habilitad 1 -->
-        <article>
-            <h2>Lorem</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sunt, cumque officia earum tempore
-                laboriosam nulla incidunt porro omnis sed.
-            </p>
-        </article>
-        <!-- Fin Habilidad 1 -->
+    <section class="habilidades">
+        <div class="container-fluid">
+            <article class="container-fluid col-lg-4 col-md-4 col-sm-4 misHabilidades">
+                <h2>Mis Habilidades</h2>
+            </article>
+        </div>
+        <div class="container">
+            <div class="row">
 
-        <!-- Inicio Habilitad 2 -->
-        <article>
-            <h2>Lorem</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sunt, cumque officia earum tempore
-                laboriosam nulla incidunt porro omnis sed.
-            </p>
-        </article>
-        <!-- Fin Habilidad 2 -->
+                <article class="col-sm-6">
+                    <div class="habilidad">
+                        <h3>Soporte Técnico</h3>
+                    </div>
+                    <div class="progreso">
+                        <div class="progresoBarra" id="soporte">
+                        </div>
+                    </div>
+                </article>
 
-        <!-- Inicio Habilitad 3 -->
-        <article>
-            <h2>Lorem</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sunt, cumque officia earum tempore
-                laboriosam nulla incidunt porro omnis sed.
-            </p>
-        </article>
-        <!-- Fin Habilidad 3 -->
+                <article class="col-sm-6">
+                    <div class="habilidad">
+                        <h3>Html & Css</h3>
+                    </div>
+                    <div class="progreso">
+                        <div class="progresoBarra" id="html"">
+                            </div>
+                        </div>
+                    </article>
 
-        <!-- Inicio Habilitad 4 -->
-        <article>
-            <h2>Lorem</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sunt, cumque officia earum tempore
-                laboriosam nulla incidunt porro omnis sed.
-            </p>
-        </article>
-        <!-- Fin Habilidad 4 -->
+                    <article class=" col-sm-6">
+                            <div class="habilidad">
+                                <h3>JavaScript</h3>
+                            </div>
+                            <div class="progreso">
+                                <div class="progresoBarra" id="javascript">
+                                </div>
+                            </div>
+                </article>
+
+                <article class="col-sm-6">
+                    <div class="habilidad">
+                        <h3>Enseñanza y Tutorías</h3>
+                    </div>
+                    <div class="progreso">
+                        <div class="progresoBarra" id="tutoria">
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+
     </section>
     <!-- Fin Habilidades -->
 
     <!-- Inicio del Footer -->
     <footer>
-        <section class="footerStyle">
-            <article class="copyright">
-                <p>Copyright © 2023 - Designed & Developed by Ing. Luis Africano</p>
-            </article>
-            <ul class="liContainer">
-                <li><a href="#"><i class="fa-brands fa-square-facebook "></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-instagram alineacionRedes"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-twitter alineacionRedes"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-youtube alineacionRedes"></i></a></li>
-            </ul>
+        <section class="container-fluid footerStyle">
+            <div class="row">
+                <article class="col-lg-9 col-md-8 col-sm-12 copyright">
+                    <p>Copyright © 2023 - Designed & Developed by Ing. Luis Africano</p>
+                </article>
+                <ul class="col-lg-3 col-md-4 col-sm-12 liContainerFooter">
+                    <li><a href="#"><i class="fa-brands fa-square-facebook "></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram alineacionRedes"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter alineacionRedes"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube alineacionRedes"></i></a></li>
+                </ul>
+            </div>
         </section>
     </footer>
     <!-- Fin del Footer -->
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
 
 </body>
 

@@ -10,13 +10,9 @@
     }
 
     * {
-        Margin: 0;
+        margin: 0;
         padding: 0;
         font-family: 'Roboto', sans-serif;
-    }
-
-    body {
-        height: 100vh;
     }
 
     /* Fin CSS Reset */
@@ -32,19 +28,32 @@
 
     nav {
         height: 100%;
-        position: sticky;
     }
+
+        /* Inicio NavBar */
+
+        .navbar-text {
+            text-decoration: none;
+            color: #a9a9a9;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            margin-left: 1rem;
+        }
+
+        .navbar-text:hover {
+            color: #ffffff;
+        }
+        /* Fin NavBar */
 
         /* Inicio CSS Li Container */
 
         .liContainer {
             display: flex;
             height: 100%;
-            justify-content: end;
             align-items: center;
-            margin-right: 20rem;
             justify-content: space-evenly;
             list-style-type: none;
+            flex-wrap: nowrap;
         }
 
         .liContainer li a {
@@ -54,20 +63,29 @@
             text-transform: uppercase;
         }
 
+        .liContainer li {
+            padding-right: 2.5rem;
+        }
+
         .liContainer li a:hover {
             color: #ffffff;
         }
 
         .logoContainer {
-            height: 2.5rem;
-            width: 3rem;
-            padding-right: 50rem;
-            padding-left: 15rem;
+            height: 3rem;
+            width: 80%;
+            margin-left: 5rem;
         }
 
         .logo {
-            width: 100%;
-            height: 100%;
+            height: 3rem;
+            width: 3.5rem;
+            padding: 0rem;
+            display: flex;            
+        }
+
+        .logo .navbar-text {
+            align-items: center;
         }
 
         /* Fin CSS Li Container */
@@ -116,7 +134,14 @@
     }
 
     .backgroundMain, .tituloMain {
-        height: 50rem;
+        height: 88.7vh;
+    }
+
+    .botonConoceme {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .conoceme {
@@ -199,33 +224,733 @@
 
     .footerStyle {
         background-color: #363940;
-        height: 6.7rem;
+        height: 6rem;
+        width: 100%;
         display: flex;
-        justify-content: right;
+        justify-content: center;
     }
 
     .footerStyle .liContainer li a {
         margin-right: 5rem;
     }
 
+    .footerStyle .row {
+        max-height: 6rem;
+    }
+
     .copyright {
-        max-height: 6.7rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-height: 6rem;
         display: flex;
         align-items: center;
+
+    }
+
+
+    .copyright p {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-height: 6rem;
+        display: flex;
+        align-items: center;
+        margin-left: 5rem;
+
     }
 
     .footerStyle article p{
         color: #ffffff;
         display: flex;
         font-size: 1.2rem;
-        padding-right: 31rem;
+        width: 80vw;
+        justify-content: center;
+        margin-bottom: 0rem;
+        padding-left: 33%;
+    }
+
+    .liContainerFooter {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        margin-bottom: 0rem;
+        max-height: 6rem;
     }
 
         /* Inicio CSS Iconos RRSS */
         .fa-brands {
             font-size: 2.5rem;
             color: #ffffff;
+            margin-inline: 2rem;
         }
         /* Fin CSS Iconos RRSS */
 
     /* Fin CSS Footer */
+
+/* ============================= */
+
+    /* Inicio Conoceme */
+
+    .seccionConoceme {
+        height: 20rem;
+        background-color: #ffffff;
+        margin-inline: auto;
+        margin-bottom: 2rem;
+    }
+
+    .seccionConocemeTitulo {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .seccionConocemeTitulo h2 {
+        color: #363940;
+        text-transform: uppercase;
+        font-size: 3rem;
+        margin-top: 5rem;
+        font-weight: bold;
+    }
+
+    .seccionConocemeTitulo p {
+        color: #505050;
+        font-size: 2rem;
+
+    }
+
+    .divisor {
+        width: 100%;
+        height: 2.3rem;
+        background: url(../img/devider.png) no-repeat center center;
+        margin: 0.5rem 0 1rem;
+    }
+    
+    /* Fin Conoceme */
+
+    /* Inicio Descarga */
+
+    .descarga {
+        background-color: #f8f8f8;
+        height: 21rem;
+    }
+
+    .descargaCv h3 {
+        display: block;
+        color: #363940;
+        text-transform: uppercase;
+        font-size: 3rem;
+        margin-top: 5rem;
+        font-weight: bold;
+        text-align: left;
+        height: 5rem;
+    }
+
+    .descargaCv {
+        width: 82rem;
+    }
+
+    .descargaCv p {
+        color: #363940;
+        font-size: 1.7rem;
+    }
+
+    .botonDescarga {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 20rem;
+        align-content: center;
+        width: 23rem;
+        justify-content: end;
+    }
+
+    .botonDescargaCV {
+        background-color: #363940;
+        border: 0.2rem solid #a9a9a9;
+        font-size: 1.9rem;
+        font-weight: 400;
+        padding: 0.8rem 1.2rem;
+        touch-action: manipulation;
+        cursor: pointer;
+        color: #ffffff;
+        text-decoration: none;
+        width: 15rem;
+        height: 4.9rem;
+        text-align: center;
+    }
+
+    /* Fin Descarga */
+
+    /* Inicio QuienSoy */
+
+    .quienSoy {
+        height: 30rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    
+    .fa-user, .fa-gem, .fa-heart, .fa-clock  {
+        font-size: 3rem;
+        margin: 0rem;
+    }
+
+    .iconoQuienSoy {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-inline: 1rem;
+        margin-top: 10px;
+    }
+
+    .infoQuienSoy {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .infoQuienSoy h4 {
+        display: flex;
+        font-size: 1.8rem;
+        font-weight: bolder;
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+    }    
+
+    .infoQuienSoy p {
+        font-size: 1.7rem;
+        text-align: left;
+    }
+
+    .cardQuienSoy {
+        height: 25rem;
+        display: flex;
+        margin-top: 5rem;
+        width: 27.4rem;
+    }
+
+    /* Fin QuienSoy */
+
+    /* Inicio Habilidades */
+    .habilidades {
+        height: 30rem;
+        background-color: #f8f8f8;
+        padding-top: 5rem;
+    }
+
+    .misHabilidades h2{
+        font-size: 2.5rem;
+        color: #363940;
+
+    }
+
+    .habilidad h3 {
+        color: #363940;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: left;
+        margin-top: 2.5rem;
+    }
+    
+        /* Inicio Barra de Progreso */
+
+        :root {
+            --bar-color: grey;
+            --fill-size: 0%;
+        }
+
+        .progresoBarra {
+            position: relative;
+            width: 7rem;
+            height: 2em;
+            background-color: #a9a9a9;
+            border-radius: 0.3rem;
+            border-color: #000000;
+            border-style: solid;
+            border-width: 0.1rem;
+            overflow: hidden;
+        }
+
+        #soporte {
+            width: 95%;
+        }
+
+        #html {
+            width: 90%;
+        }
+
+        #javascript {
+            width: 89%;
+        }
+
+        #tutoria {
+            width: 95%;
+        }
+
+        /* Fin Barra de Progreso */
+
+    /* Fin Habilidades */
+
+/* ============================= */
+
+    /* Media Queries */
+
+    /* De 0px a 368px */
+    @media (max-width: 368px) {
+        
+        /* Inicio index */
+        .footerStyle article p {
+            color: #ffffff;
+            display: flex;
+            font-size: 0.95rem;
+            width: 85vw;
+            justify-content: center;
+            margin-bottom: 0rem;
+            padding-left: 0;
+            margin-left: 0;
+        }
+
+        .copyright {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+        }
+
+        .tituloMain h1 {            
+            font-size: 3rem;
+            padding-top: 3rem;
+        }
+
+        .tituloMain h2 {            
+            font-size: 3rem;
+        }
+
+        .tituloMain p {            
+            font-size: 1.5rem;
+        }
+
+        .botonConoceme {
+            display: flex;
+            padding-bottom: 2rem;
+        }
+
+        /* Fin index */
+
+        /* Inicio Conoceme */
+
+        .quienSoy {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: 93rem;
+        }
+
+        .seccionConocemeTitulo h2 {
+            color: #363940;
+            text-transform: uppercase;
+            font-size: 2.5rem;
+            margin-top: 3rem;
+            font-weight: bold;
+        }
+
+        .seccionConocemeTitulo p {
+            color: #505050;
+            font-size: 1.5rem;
+        }
+
+        .seccionConoceme {
+            height: 14rem;
+        }
+
+        .descargaCv {
+            width: 100vw;
+        }
+
+        .descargaCv h3 {
+            display: block;
+            color: #363940;
+            text-transform: uppercase;
+            font-size: 2rem;
+            margin-top: 3rem;
+            font-weight: bold;
+            text-align: center;
+            height: 3rem;
+        }
+
+        .descargaCv p {
+            text-align: center;
+        }
+
+        .descarga {
+            background-color: #f8f8f8;
+            height: 32rem;
+        }
+
+        .botonDescarga {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            height: 9rem;
+            align-content: center;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .botonDescargaCV {
+            background-color: #363940;
+            border: 0.2rem solid #a9a9a9;
+            font-size: 1.5rem;
+            font-weight: 400;
+            padding: 0.8rem 1.2rem;
+            touch-action: manipulation;
+            cursor: pointer;
+            color: #ffffff;
+            text-decoration: none;
+            width: 12rem;
+            height: 4.4rem;
+            text-align: center;
+        }
+
+        .quienSoy .row .cardQuienSoy {
+            width: 100%;
+            padding-inline: 2rem;
+        }
+
+        .cardQuienSoy {
+            margin-top: 2.5rem;
+            height: 20rem;
+        }
+
+        .habilidades {
+            height: 39rem;
+            background-color: #f8f8f8;
+            padding-top: 3.5rem;
+        }
+
+        .habilidad h3 {
+            text-align: center;
+        }
+
+        /* Fin Conoceme */
+
+    }
+    
+    /* De 369px a 767px */
+    @media (min-width: 369px) and (max-width: 767px) {
+
+        /* Inicio index */
+
+        .footerStyle article p {
+            color: #ffffff;
+            display: flex;
+            font-size: 1.1rem;
+            width: 85vw;
+            justify-content: center;
+            margin-bottom: 0rem;
+            padding-left: 0;
+            margin-left: 0;
+        }
+
+        .copyright {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+        }
+
+        .tituloMain h1 {            
+            font-size: 4rem;
+            padding-top: 2rem;
+        }
+
+        .tituloMain h2 {            
+            font-size: 4rem;
+        }
+
+        .tituloMain p {            
+            font-size: 2rem;
+        }
+
+        .botonConoceme {
+            display: flex;
+            padding-bottom: 2rem;
+        }
+
+        /* Fin index */
+
+        /* Inicio Conoceme */
+
+        .quienSoy {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: 55rem;
+        }
+
+        .seccionConocemeTitulo h2 {
+            color: #363940;
+            text-transform: uppercase;
+            font-size: 3rem;
+            margin-top: 3.5rem;
+            font-weight: bold;
+        }
+
+        .seccionConocemeTitulo p {
+            color: #505050;
+            font-size: 2rem;
+        }
+
+        .seccionConoceme {
+            height: 14rem;
+        }
+
+        .descargaCv {
+            width: 100vw;
+        }
+
+        .descargaCv h3 {
+            display: block;
+            color: #363940;
+            text-transform: uppercase;
+            font-size: 2.5rem;
+            margin-top: 3.5rem;
+            font-weight: bold;
+            text-align: center;
+            height: 3.5rem;
+        }
+
+        .descargaCv p {
+            text-align: center;
+        }
+
+        .descarga {
+            background-color: #f8f8f8;
+            height: 28rem;
+        }
+
+        .botonDescarga {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            height: 9rem;
+            align-content: center;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .botonDescargaCV {
+            background-color: #363940;
+            border: 0.2rem solid #a9a9a9;
+            font-size: 1.5rem;
+            font-weight: 400;
+            padding: 0.8rem 1.2rem;
+            touch-action: manipulation;
+            cursor: pointer;
+            color: #ffffff;
+            text-decoration: none;
+            width: 12rem;
+            height: 4.4rem;
+            text-align: center;
+        }
+
+        .quienSoy .row .cardQuienSoy {
+            width: 100%;
+            padding-inline: 1rem;
+            height: 10rem;
+        }
+
+        .quienSoy .container {
+            max-width: 70rem;
+        }
+
+        .cardQuienSoy {
+            margin-top: 2.5rem;
+            height: 20rem;
+        }
+
+        .habilidades {
+            height: 25rem;
+            background-color: #f8f8f8;
+            padding-top: 3.5rem;
+        }
+
+        .habilidad h3 {
+            text-align: center;
+        }
+
+        /* Fin Conoceme */
+
+    }
+    
+    /* De 768px a 1199px */
+    @media (min-width: 768px) and (max-width: 1199px) {
+
+        /* Inicio index */
+
+        .footerStyle article p {
+            color: #ffffff;
+            display: flex;
+            font-size: 1.3rem;
+            width: 85vw;
+            justify-content: center;
+            margin-bottom: 0rem;
+            padding-left: 0;
+            margin-left: 0;
+        }
+
+        .copyright {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+        }
+
+        .tituloMain h1 {            
+            font-size: 4rem;
+            padding-top: 2rem;
+        }
+
+        .tituloMain h2 {            
+            font-size: 4rem;
+        }
+
+        .tituloMain p {            
+            font-size: 2rem;
+        }
+
+        .botonConoceme {
+            display: flex;
+            padding-bottom: 2rem;
+        }
+
+        .liContainerFooter {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: nowrap;
+            align-items: center;
+        }
+
+        .footerStyle .row {
+            max-height: 6rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        /* Fin index */
+
+        /* Inicio Conoceme */
+
+        .quienSoy {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: 55rem;
+        }
+
+        .seccionConocemeTitulo h2 {
+            color: #363940;
+            text-transform: uppercase;
+            font-size: 3rem;
+            margin-top: 3.5rem;
+            font-weight: bold;
+        }
+
+        .seccionConocemeTitulo p {
+            color: #505050;
+            font-size: 2rem;
+        }
+
+        .seccionConoceme {
+            height: 14rem;
+        }
+
+        .descargaCv {
+            width: 100vw;
+        }
+
+        .descargaCv h3 {
+            display: block;
+            color: #363940;
+            text-transform: uppercase;
+            font-size: 2.5rem;
+            margin-top: 3.5rem;
+            font-weight: bold;
+            text-align: center;
+            height: 3.5rem;
+        }
+
+        .descargaCv p {
+            text-align: center;
+        }
+
+        .descarga {
+            background-color: #f8f8f8;
+            height: 28rem;
+        }
+
+        .botonDescarga {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            height: 9rem;
+            align-content: center;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .botonDescargaCV {
+            background-color: #363940;
+            border: 0.2rem solid #a9a9a9;
+            font-size: 1.5rem;
+            font-weight: 400;
+            padding: 0.8rem 1.2rem;
+            touch-action: manipulation;
+            cursor: pointer;
+            color: #ffffff;
+            text-decoration: none;
+            width: 12rem;
+            height: 4.4rem;
+            text-align: center;
+        }
+
+        .quienSoy .row .cardQuienSoy {
+            width: 100%;
+            padding-inline: 1rem;
+            height: 10rem;
+        }
+
+        .quienSoy .container {
+            max-width: 70rem;
+        }
+
+        .cardQuienSoy {
+            margin-top: 2.5rem;
+            height: 20rem;
+        }
+
+        .habilidades {
+            height: 25rem;
+            background-color: #f8f8f8;
+            padding-top: 3.5rem;
+        }
+
+        .habilidad h3 {
+            text-align: center;
+        }
+
+        /* Fin Conoceme */
+
+    }
+    
+    /* De 1200px en adelante */
+    @media (min-width: 1200px) {
+        
+    }
