@@ -450,7 +450,8 @@
     .habilidades {
         height: 30rem;
         background-color: #f8f8f8;
-        padding-top: 5rem;
+        padding-top: 5rem;        
+        padding-inline: 3rem;
     }
 
     .misHabilidades h2{
@@ -510,8 +511,8 @@
 
     /* Media Queries */
 
-    /* De 0px a 368px */
-    @media (max-width: 368px) {
+    /* De 0px a 479px */
+    @media screen and (max-width: 479px) {
         
         /* Inicio index */
         .footerStyle article p {
@@ -641,6 +642,7 @@
             height: 39rem;
             background-color: #f8f8f8;
             padding-top: 3.5rem;
+            padding-inline: 3rem;
         }
 
         .habilidad h3 {
@@ -651,15 +653,14 @@
 
     }
     
-    /* De 369px a 767px */
-    @media (min-width: 369px) and (max-width: 767px) {
+    /* De 480px a 767px */
+    @media screen and (min-width: 480px) and (max-width: 767px) {
 
         /* Inicio index */
-
         .footerStyle article p {
             color: #ffffff;
             display: flex;
-            font-size: 1.1rem;
+            font-size: 0.95rem;
             width: 85vw;
             justify-content: center;
             margin-bottom: 0rem;
@@ -675,16 +676,16 @@
         }
 
         .tituloMain h1 {            
-            font-size: 4rem;
-            padding-top: 2rem;
+            font-size: 3rem;
+            padding-top: 3rem;
         }
 
         .tituloMain h2 {            
-            font-size: 4rem;
+            font-size: 3rem;
         }
 
         .tituloMain p {            
-            font-size: 2rem;
+            font-size: 1.5rem;
         }
 
         .botonConoceme {
@@ -700,24 +701,29 @@
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
-            height: 55rem;
+            height: 69rem;
         }
 
         .seccionConocemeTitulo h2 {
             color: #363940;
             text-transform: uppercase;
-            font-size: 3rem;
-            margin-top: 3.5rem;
+            font-size: 2.5rem;
+            margin-top: 3rem;
             font-weight: bold;
         }
 
         .seccionConocemeTitulo p {
             color: #505050;
-            font-size: 2rem;
+            font-size: 1.5rem;
         }
 
         .seccionConoceme {
             height: 14rem;
+            width: 100%;
+        }
+
+        .seccionConocemeTitulo {
+            width: 100%;
         }
 
         .descargaCv {
@@ -728,11 +734,11 @@
             display: block;
             color: #363940;
             text-transform: uppercase;
-            font-size: 2.5rem;
-            margin-top: 3.5rem;
+            font-size: 2rem;
+            margin-top: 3rem;
             font-weight: bold;
             text-align: center;
-            height: 3.5rem;
+            height: 3rem;
         }
 
         .descargaCv p {
@@ -741,7 +747,7 @@
 
         .descarga {
             background-color: #f8f8f8;
-            height: 28rem;
+            height: 32rem;
         }
 
         .botonDescarga {
@@ -771,23 +777,19 @@
 
         .quienSoy .row .cardQuienSoy {
             width: 100%;
-            padding-inline: 1rem;
-            height: 10rem;
-        }
-
-        .quienSoy .container {
-            max-width: 70rem;
+            padding-inline: 2rem;
         }
 
         .cardQuienSoy {
             margin-top: 2.5rem;
-            height: 20rem;
+            height: 14rem;
         }
 
         .habilidades {
-            height: 38rem;
+            height: 39rem;
             background-color: #f8f8f8;
             padding-top: 3.5rem;
+            padding-inline: 3rem;
         }
 
         .habilidad h3 {
@@ -797,6 +799,8 @@
         /* Fin Conoceme */
 
     }
+
+    
     
     /* De 768px a 1199px */
     @media (min-width: 768px) and (max-width: 1199px) {
@@ -950,6 +954,7 @@
             height: 25rem;
             background-color: #f8f8f8;
             padding-top: 3.5rem;
+            padding-inline: 3rem;
         }
 
         .habilidad h3 {
