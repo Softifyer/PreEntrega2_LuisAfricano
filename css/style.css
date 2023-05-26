@@ -43,6 +43,13 @@
         .navbar-text:hover {
             color: #ffffff;
         }
+
+        .fa-bars, .navbar-toggler:focus{
+            color: #f8f8f8;
+            font-size: 2rem;
+            border-width: none;
+        }
+
         /* Fin NavBar */
 
         /* Inicio CSS Li Container */
@@ -54,6 +61,8 @@
             justify-content: space-evenly;
             list-style-type: none;
             flex-wrap: nowrap;
+            background-color: #363940;
+            width: 100%;
         }
 
         .liContainer li a {
@@ -228,6 +237,7 @@
         width: 100%;
         display: flex;
         justify-content: center;
+        text-decoration: none;
     }
 
     .footerStyle .liContainer li a {
