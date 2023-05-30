@@ -15,6 +15,10 @@
         font-family: 'Roboto', sans-serif;
     }
 
+    .container {
+        max-width: 1096px;
+    }
+
     /* Fin CSS Reset */
 
 /* ============================= */
@@ -112,11 +116,15 @@
 
     .backgroundMain {
         background-image: url(../img/indexBackground.jpg);
-        height: 100%;
-        width: 100%;
         background-size: cover;
-        background-repeat: round;
+        background-repeat:no-repeat;
         background-attachment: fixed;
+    }
+
+    
+
+    .backgroundMain, .tituloMain {
+        height: 88.2vh;
     }
 
     .tituloMain h1 {
@@ -140,10 +148,6 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    }
-
-    .backgroundMain, .tituloMain {
-        height: 88.7vh;
     }
 
     .botonConoceme {
@@ -506,6 +510,46 @@
         /* Fin Barra de Progreso */
 
     /* Fin Habilidades */
+
+/* ============================= */
+
+/* Inicio Experiencia */
+
+    /* Inicio Trayectoria */
+
+    .cardTrayectoria {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        max-width: 30rem;
+    }
+
+    .cardTrayectoria h3 {
+        color: #363940;
+    }
+
+    .iconoTrayectoria {
+        text-align: center;
+        font-size: 8rem;
+    }
+
+    .trayectoriaInfo {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        max-width: 40rem;
+        justify-content: space-evenly;
+    }
+
+    .trayectoria, .trayectoriaInfo {
+        margin: 0rem;
+        justify-content: space-around;
+    }
+
+    /* Fin Trayectoria */
+
+/* Fin Experiencia */
 
 /* ============================= */
 
