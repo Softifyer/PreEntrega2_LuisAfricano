@@ -350,7 +350,7 @@
 
     .descarga {
         background-color: #f8f8f8;
-        height: 21rem;
+        height: 31rem;
     }
 
     .descargaCv h3 {
@@ -522,6 +522,7 @@
         flex-direction: column;
         flex-wrap: nowrap;
         max-width: 30rem;
+        margin-inline: 1.9rem;
     }
 
     .cardTrayectoria h3 {
@@ -533,21 +534,40 @@
         font-size: 8rem;
     }
 
-    .trayectoriaInfo {
+    .trayectoriaInfo .row {
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-evenly;
-        max-width: 40rem;
-        justify-content: space-evenly;
-    }
-
-    .trayectoria, .trayectoriaInfo {
-        margin: 0rem;
-        justify-content: space-around;
+        justify-content: center;
     }
 
     /* Fin Trayectoria */
+
+    /* Inicio Testimonios */
+
+    .testimonios {
+        background-color: #f8f8f8;
+        height: 21rem;
+    }
+
+    .carousel-indicators {
+        position: initial;
+        top: 50rem;
+    }
+
+    .carrusel {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .testimonio {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Fin Testimonios */
 
 /* Fin Experiencia */
 
