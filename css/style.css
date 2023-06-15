@@ -549,11 +549,6 @@
         height: 21rem;
     }
 
-    .carousel-indicators {
-        position: initial;
-        top: 50rem;
-    }
-
     .carrusel {
         display: flex;
         flex-direction: column;
