@@ -350,7 +350,7 @@
 
     .descarga {
         background-color: #f8f8f8;
-        height: 31rem;
+        height: 23rem;
     }
 
     .descargaCv h3 {
@@ -522,7 +522,7 @@
         flex-direction: column;
         flex-wrap: nowrap;
         max-width: 30rem;
-        margin-inline: 1.9rem;
+        margin-inline: 3rem;
     }
 
     .cardTrayectoria h3 {
@@ -531,13 +531,37 @@
 
     .iconoTrayectoria {
         text-align: center;
-        font-size: 8rem;
+        font-size: 6rem;
     }
 
     .trayectoriaInfo .row {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        margin-bottom: 3.5rem;
+    }
+
+    .parrafoTrayectoria {
+        font-size: 2rem;
+    }
+
+    .fa-chevron-left, .fa-chevron-right {
+        font-size: 3rem;
+        color: #363940;
+        margin-top: 6rem;
+    }
+
+    .carousel-indicators [data-bs-target] {
+        background-color: #363940;
+    }
+
+    .carousel-item {
+        text-align: center;
+        margin-top: 7rem;
+    }
+
+    .carousel-indicators {
+        margin-bottom: 7rem;
     }
 
     /* Fin Trayectoria */
@@ -546,7 +570,7 @@
 
     .testimonios {
         background-color: #f8f8f8;
-        height: 21rem;
+        height: 31rem;
     }
 
     .carrusel {
@@ -565,6 +589,115 @@
     /* Fin Testimonios */
 
 /* Fin Experiencia */
+
+/* Inicio Filosofía */
+
+    /* Inicio Filosofía Título */
+
+    .seccionFilosofia {
+        height: 27rem;
+        background-color: #ffffff;
+        margin-inline: auto;
+        margin-bottom: 2rem;
+    }
+
+    .seccionFilosofiaTitulo {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .seccionFilosofiaTitulo h2 {
+        color: #363940;
+        text-transform: uppercase;
+        font-size: 3rem;
+        margin-top: 5rem;
+        font-weight: bold;
+    }
+
+    .seccionFilosofiaTitulo p {
+        color: #505050;
+        font-size: 2rem;
+    }
+
+    /* Fin Filosofía Título */
+
+    /* Inicio Sección Datos Relevantes */
+
+    .cardDatosRelevantes {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        max-width: 37rem;
+        margin-inline: 1.5rem;
+    }
+
+    .cardDatosRelevantes h3 {
+        color: #363940;
+    }
+
+
+    .seccionDatosRelevantes {
+        height: 80rem;
+        background-color: #ffffff;
+        margin-inline: auto;
+        margin-bottom: 2rem;
+        background-color: #f8f8f8;
+    }
+
+    .seccionDatosRelevantesTitulo {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 3rem;
+    }
+
+    .seccionDatosRelevantesTitulo h2 {
+        color: #363940;
+        text-transform: uppercase;
+        font-size: 3rem;
+        margin-top: 5rem;
+        font-weight: bold;
+    }
+
+    .seccionDatosRelevantes p {
+        color: #505050;
+        font-size: 2rem;
+
+    }
+
+    /* Fin Sección Datos Relevantes */
+
+    /* Inicio Cunter */
+
+    .counter {
+        font-family: 'Roboto', sans-serif;
+        font-size: 4em;
+    }
+
+    .counter:not(.is-visible) {
+        visibility: hidden;
+    }
+
+    /* Fin Counter */
+
+    /* Inicio Info Datos Relevantes */
+
+    .infoRelevante .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 0.5rem;
+    }
+
+    /* Fin Info Datos Relevantes */
+
+
+/* Fin Filosofía */
 
 /* ============================= */
 

@@ -71,7 +71,7 @@
     <main>
         <!-- Inicio Trayectoria Título -->
         <section class="seccionConoceme">
-            <article class="col-lg-12 col-md-12 col-sm-12 seccionConocemeTitulo">
+            <article class="container-fluid col-lg-4 col-md-4 col-sm-4 seccionConocemeTitulo">
                 <h2>Experiencia</h2>
                 <div class="divisor"></div>
                 <p>Trayectoria Destacada</p>
@@ -89,7 +89,7 @@
                         <div class="col-lg-12">
                             <h3>Servidores</h3>
                         </div>
-                        <div class="col-lg-12">
+                        <div class="col-lg-12 parrafoTrayectoria">
                             <p>Amplia experiencia en la implementación y
                                 administración de servidores Windows (Todas las versiones), Linux, etc.</p>
                         </div>
@@ -101,7 +101,7 @@
                         <div class="col-lg-12">
                             <h3>Enseñanza</h3>
                         </div>
-                        <div class="col-lg-12">
+                        <div class="col-lg-12 parrafoTrayectoria">
                             <p>Amplia experiencia en la creación de contenido, tutoría
                                 y enseñanza a nivel de grado y postgrado.</p>
                         </div>
@@ -113,7 +113,7 @@
                         <div class="col-lg-12">
                             <h3>Web Hosting</h3>
                         </div>
-                        <div class="col-lg-12">
+                        <div class="col-lg-12 parrafoTrayectoria">
                             <p>Conocimientos destados en la instalación de servidores
                                 virtuales y desarrollo de ambientes virtuales de trabajo.</p>
                         </div>
@@ -125,7 +125,7 @@
                         <div class="col-lg-12">
                             <h3>Coding</h3>
                         </div>
-                        <div class="col-lg-12">
+                        <div class="col-lg-12 parrafoTrayectoria">
                             <p>Escritura limpia de código, documentación acorde a los
                                 stándares de calidad requeridos por cada herramienta y adaptabilidad al entorno.</p>
                         </div>
@@ -139,59 +139,47 @@
     <!-- Fin Main -->
 
     <!-- Inicio Testimonios -->
-    <section class="descarga">
+    <section class="testimonios">
         <article class="col-lg-12 col-md-12 col-sm-12 seccionConocemeTitulo">
             <h2>Testimonios</h2>
             <div class="divisor"></div>
             <p>Experiencias compartidas</p>
         </article>
 
-        <div class="container-fluid">
-            <div class="col-lg-12 col-md-8 col-sm-8">
-                <div class="col-lg-8 col-md-8 col-sm-8">
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
-                        data-bs-slide="prev"><i class="fa-solid fa-angle-left" style="color: #000000;"></i></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                </div>
-                <div class="col-lg-8 col-md-8 col-sm-8">
-                    <div class="carrusel">
-                        <div id="carouselExampleFade" class="carousel slide carousel-fade">
-                            <div class="carousel-inner testimonio">
-                                <div class="carousel-item testimonio active">
-                                    <dir class="d-block col-lg-8 col-md-8 col-sm-8 testimonio">
-                                        <p>"Excelente profesional, la entrega de sus tareas destacan notandose compromiso y
-                                            preocupación, te
-                                            da la garantía de que si algo falla , el lo va a resolver."</p>
-                                    </dir>
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="..." class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="..." class="d-block w-100" alt="...">
-                                </div>
-                            </div>
-                            <div class="container-fluid">
-            
-            
-            
-                            </div>
-                        </div>
+        <article>
+            <div id="carouselExampleIndicators" class="carousel slide">
+                
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <p class="parrafoTestimonio text-center">"Excelente profesional, la entrega de sus tareas destacan notandose compromiso y preocupación, te da la garant ía de que si algo falla , el lo va a resolver."</p>
+                    </div>
+                    <div class="carousel-item">
+                        <p class="parrafoTestimonio">"Excelente profesional, la entrega de sus tareas destacan notandose compromiso y preocupación, te da la garant ía de que si algo falla , el lo va a resolver."</p>
+                    </div>
+                    <div class="carousel-item">
+                        <p class="parrafoTestimonio">"Excelente profesional, la entrega de sus tareas destacan notandose compromiso y preocupación, te da la garant ía de que si algo falla , el lo va a resolver."</p>
                     </div>
                 </div>
-                <div class="col-lg-8 col-md-8 col-sm-8">
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <i class="fa-solid fa-chevron-left"></i>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
                 </div>
             </div>
-        </div>
-
-
-        
+        </article>
     </section>
     <!-- Fin Testimonios -->
 
