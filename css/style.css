@@ -699,6 +699,95 @@
 
 /* Fin Filosofía */
 
+/* Inicio Contacto */
+
+    /* Inicio Contacto Título */
+
+    .seccionContacto {
+        height: 20rem;
+        background-color: #ffffff;
+        margin-inline: auto;
+        margin-bottom: 2rem;
+    }
+
+    .seccionContactoTitulo {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .seccionContactoTitulo h2 {
+        color: #363940;
+        text-transform: uppercase;
+        font-size: 3rem;
+        margin-top: 5rem;
+        font-weight: bold;
+    }
+
+    .seccionContactoTitulo p {
+        color: #505050;
+        font-size: 2rem;
+
+    }
+
+    /* Fin Contacto Título */
+
+    /* Inicio Info Contacto */
+
+    .seccionInfoContacto {
+        height: 80rem;
+        background-color: #f8f8f8;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .infoGeneral {
+        display: flex;
+        flex-direction: column;
+        width: 33.3%;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        width: 33.3%;
+    }
+
+    .mapa {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 33.3%;
+        align-items: baseline;
+    }
+
+    .infoContacto {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    input, textarea {
+        width: 40rem;
+    }
+
+    form .formulario {
+        align-items: baseline;
+    }
+
+    label {
+        align-items: baseline;
+    }
+
+    /* Fin Info Contacto */
+
+/* Fin Contacto */
+
 /* ============================= */
 
     /* Media Queries */
