@@ -531,14 +531,14 @@
 
     .iconoTrayectoria {
         text-align: center;
-        font-size: 6rem;
+        font-size: 5rem;
     }
 
     .trayectoriaInfo .row {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin-bottom: 3.5rem;
+        margin-bottom: 3.2rem;
     }
 
     .parrafoTrayectoria {
@@ -640,7 +640,7 @@
 
 
     .seccionDatosRelevantes {
-        height: 80rem;
+        height: 51.3rem;
         background-color: #ffffff;
         margin-inline: auto;
         margin-bottom: 2rem;
