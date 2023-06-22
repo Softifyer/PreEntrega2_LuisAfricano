@@ -1,1315 +1,1103 @@
+@charset "UTF-8";
 /* ============================= */
-   /* Inicio CSS Reset */
-    html {
-        font-size: 62.5%;
-    }
+/* Inicio CSS Reset */
+html {
+  font-size: 62.5%;
+}
 
-    p {
-        font-size: 2rem;
-        /* Referencia 20px */
-    }
+p {
+  font-size: 2rem;
+  /* Referencia 20px */
+}
 
-    * {
-        margin: 0;
-        padding: 0;
-        font-family: 'Roboto', sans-serif;
-    }
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
 
-    .container {
-        max-width: 1096px;
-    }
+.container {
+  max-width: 1096px;
+}
 
-    /* Fin CSS Reset */
-
+/* Fin CSS Reset */
 /* ============================= */
+/* Inicio CSS Header */
+.header {
+  background-color: #363940;
+  height: 5rem;
+}
 
-    /* Inicio CSS Header */
+nav {
+  height: 100%;
+}
 
-    .header{
-        background-color: #363940;
-        height: 5rem;
-    }
+/* Inicio NavBar */
+.navbar-text {
+  text-decoration: none;
+  color: #a9a9a9;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-left: 1rem;
+}
+.navbar-text:hover {
+  color: #ffffff;
+}
 
-    nav {
-        height: 100%;
-    }
+.fa-bars, .navbar-toggler:focus {
+  color: #f8f8f8;
+  font-size: 2rem;
+  border-width: none;
+}
 
-        /* Inicio NavBar */
+/* Fin NavBar */
+/* Inicio CSS Li Container */
+.liContainer {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style-type: none;
+  flex-wrap: nowrap;
+  background-color: #363940;
+  width: 100%;
+}
+.liContainer li {
+  padding-right: 2.5rem;
+}
+.liContainer li a {
+  text-decoration: none;
+  color: #a9a9a9;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.liContainer li a:hover {
+  color: #ffffff;
+}
 
-        .navbar-text {
-            text-decoration: none;
-            color: #a9a9a9;
-            font-size: 1.5rem;
-            text-transform: uppercase;
-            margin-left: 1rem;
-        }
+.logo {
+  height: 3rem;
+  width: 3.5rem;
+  padding: 0rem;
+  display: flex;
+}
+.logo .navbar-text {
+  align-items: center;
+}
 
-        .navbar-text:hover {
-            color: #ffffff;
-        }
-
-        .fa-bars, .navbar-toggler:focus{
-            color: #f8f8f8;
-            font-size: 2rem;
-            border-width: none;
-        }
-
-        /* Fin NavBar */
-
-        /* Inicio CSS Li Container */
-
-        .liContainer {
-            display: flex;
-            height: 100%;
-            align-items: center;
-            justify-content: space-evenly;
-            list-style-type: none;
-            flex-wrap: nowrap;
-            background-color: #363940;
-            width: 100%;
-        }
-
-        .liContainer li a {
-            text-decoration: none;
-            color: #a9a9a9;
-            font-size: 1.5rem;
-            text-transform: uppercase;
-        }
-
-        .liContainer li {
-            padding-right: 2.5rem;
-        }
-
-        .liContainer li a:hover {
-            color: #ffffff;
-        }
-
-        .logoContainer {
-            height: 3rem;
-            width: 80%;
-            margin-left: 5rem;
-        }
-
-        .logo {
-            height: 3rem;
-            width: 3.5rem;
-            padding: 0rem;
-            display: flex;            
-        }
-
-        .logo .navbar-text {
-            align-items: center;
-        }
-
-        /* Fin CSS Li Container */
-
-    /* Fin CSS Header */
-
+/* Fin CSS Li Container */
+/* Fin CSS Header */
 /* ============================= */
+/* Inicio CSS Main */
+h1, h2, h3 {
+  text-align: center;
+  color: #ffffff;
+}
 
-    /* Inicio CSS Main */
-    
-    h1, h2, h3 {
-        text-align: center;
-        color: #ffffff;
-    }
+.backgroundMain {
+  background-image: url(../img/indexBackground.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 88.2vh;
+}
 
-    .backgroundMain {
-        background-image: url(../img/indexBackground.jpg);
-        background-size: cover;
-        background-repeat:no-repeat;
-        background-attachment: fixed;
-    }
+.tituloMain {
+  height: 88.2vh;
+}
 
-    
+.tituloMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.tituloMain h1 {
+  font-size: 5.5rem;
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+}
+.tituloMain h2 {
+  font-size: 4rem;
+  padding-bottom: 1rem;
+}
+.tituloMain p {
+  font-size: 2rem;
+  color: #ffffff;
+  text-align: center;
+  padding-bottom: 4rem;
+}
 
-    .backgroundMain, .tituloMain {
-        height: 88.2vh;
-    }
+.botonConoceme {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-    .tituloMain h1 {
-        font-size: 5.5rem;
-        padding-bottom: 1rem;
-        text-transform: uppercase;
-    }
-    .tituloMain h2 {
-        font-size: 4rem;        
-        padding-bottom: 1rem;
-    }
-    .tituloMain p {
-        font-size: 2rem;
-        color: #ffffff;
-        text-align: center;
-        padding-bottom: 4rem;
-    }
+.conoceme {
+  background: none;
+  border: 0.2rem solid #ffffff;
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding: 0.8rem 1.2rem;
+  touch-action: manipulation;
+  cursor: pointer;
+  color: #ffffff;
+}
+.conoceme:hover {
+  background-color: #ffffff;
+  color: #363940;
+}
 
-    .tituloMain {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .botonConoceme {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .conoceme {
-        background: none;
-        border: 0.2rem solid #ffffff;
-        font-size: 1.4rem;
-        font-weight: 400;
-        padding: 0.8rem 1.2rem;
-        touch-action: manipulation;
-        cursor: pointer;
-        color: #ffffff;
-    }
-
-    .conoceme:hover {
-        background-color: #ffffff;
-        color: #363940;
-    }
-    
-
-    /* Fin CSS Main */
-
+/* Fin CSS Main */
 /* ============================= */
+/* Inicio CSS Descarga de CV */
+.sectionInfo {
+  background: #ffffff;
+}
 
-    /* Inicio CSS Descarga de CV */
+.descargaCV {
+  color: #363940;
+  padding: 3rem;
+  height: 15rem;
+}
+.descargaCV h2 {
+  text-align: center;
+  font-size: 3rem;
+  padding: 2.5rem;
+  color: #363940;
+}
+.descargaCV p {
+  text-align: center;
+  font-size: 1.8rem;
+}
+.descargaCV a {
+  color: #000000;
+  font-size: 2rem;
+  padding: 1rem 1rem 1rem 1rem;
+  text-align: center;
+}
 
-    .sectionInfo {
-        background: #ffffff;
-    }
-
-    .descargaCV {
-        color: #363940;
-        padding: 3rem;
-        height: 15rem;
-    } 
-
-    .descargaCV h2{
-        text-align: center;
-        font-size: 3rem;
-        padding: 2.5rem;
-        color: #363940;
-    }
-
-    .descargaCV p{
-        text-align: center;
-        font-size: 1.8rem;
-    }
-
-    .descargaCV a{
-        color: #000000;
-        font-size: 2rem;
-        padding: 1rem 1rem 1rem 1rem;
-        text-align: center;
-    }
-
-    /* Fin CSS Descarga de CV */
-
+/* Fin CSS Descarga de CV */
 /* ============================= */
+/* Inicio CSS Footer */
+.footerStyle {
+  background-color: #363940;
+  height: 6rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+.footerStyle .liContainer li a {
+  margin-right: 5rem;
+}
+.footerStyle .row {
+  max-height: 6rem;
+}
+.footerStyle article p {
+  color: #ffffff;
+  display: flex;
+  font-size: 1.2rem;
+  width: 80vw;
+  justify-content: center;
+  margin-bottom: 0rem;
+  padding-left: 33%;
+}
 
+.copyright {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-height: 6rem;
+  display: flex;
+  align-items: center;
+}
+.copyright p {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-height: 6rem;
+  display: flex;
+  align-items: center;
+  margin-left: 5rem;
+}
+
+.liContainerFooter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 0rem;
+  max-height: 6rem;
+}
+
+/* Inicio CSS Iconos RRSS */
+.fa-brands {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-inline: 2rem;
+}
+
+/* Fin CSS Iconos RRSS */
+/* Fin CSS Footer */
 /* ============================= */
+/* Inicio Conoceme */
+.seccionConoceme {
+  height: 20rem;
+  background-color: #ffffff;
+  margin-inline: auto;
+  margin-bottom: 2rem;
+}
 
-    /* Inicio CSS Footer */
+.seccionConocemeTitulo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+.seccionConocemeTitulo h2 {
+  color: #363940;
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin-top: 5rem;
+  font-weight: bold;
+}
+.seccionConocemeTitulo p {
+  color: #505050;
+  font-size: 2rem;
+}
 
-    .footerStyle {
-        background-color: #363940;
-        height: 6rem;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        text-decoration: none;
-    }
+.divisor {
+  width: 100%;
+  height: 2.3rem;
+  background: url(../img/devider.png) no-repeat center center;
+  margin: 0.5rem 0 1rem;
+}
 
-    .footerStyle .liContainer li a {
-        margin-right: 5rem;
-    }
+/* Fin Conoceme */
+/* Inicio Descarga */
+.descarga {
+  background-color: #f8f8f8;
+  height: 23rem;
+}
 
-    .footerStyle .row {
-        max-height: 6rem;
-    }
+.descargaCv {
+  width: 82rem;
+}
+.descargaCv h3 {
+  display: block;
+  color: #363940;
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin-top: 5rem;
+  font-weight: bold;
+  text-align: left;
+  height: 5rem;
+}
+.descargaCv p {
+  color: #363940;
+  font-size: 1.7rem;
+}
 
-    .copyright {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        max-height: 6rem;
-        display: flex;
-        align-items: center;
+.botonDescarga {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 20rem;
+  align-content: center;
+  width: 23rem;
+  justify-content: end;
+}
 
-    }
+.botonDescargaCV {
+  background-color: #363940;
+  border: 0.2rem solid #a9a9a9;
+  font-size: 1.9rem;
+  font-weight: 400;
+  padding: 0.8rem 1.2rem;
+  touch-action: manipulation;
+  cursor: pointer;
+  color: #ffffff;
+  text-decoration: none;
+  width: 15rem;
+  height: 4.9rem;
+  text-align: center;
+}
 
+/* Fin Descarga */
+/* Inicio QuienSoy */
+.quienSoy {
+  height: 30rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+}
 
-    .copyright p {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        max-height: 6rem;
-        display: flex;
-        align-items: center;
-        margin-left: 5rem;
+.fa-user, .fa-gem, .fa-heart, .fa-clock {
+  font-size: 3rem;
+  margin: 0rem;
+}
 
-    }
+.iconoQuienSoy {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-inline: 1rem;
+  margin-top: 10px;
+}
 
-    .footerStyle article p{
-        color: #ffffff;
-        display: flex;
-        font-size: 1.2rem;
-        width: 80vw;
-        justify-content: center;
-        margin-bottom: 0rem;
-        padding-left: 33%;
-    }
+.infoQuienSoy {
+  display: flex;
+  flex-direction: column;
+}
+.infoQuienSoy h4 {
+  display: flex;
+  font-size: 1.8rem;
+  font-weight: bolder;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+.infoQuienSoy p {
+  font-size: 1.7rem;
+  text-align: left;
+}
 
-    .liContainerFooter {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-content: center;
-        justify-content: center;
-        margin-bottom: 0rem;
-        max-height: 6rem;
-    }
+.cardQuienSoy {
+  height: 25rem;
+  display: flex;
+  margin-top: 5rem;
+  width: 27.4rem;
+}
 
-        /* Inicio CSS Iconos RRSS */
-        .fa-brands {
-            font-size: 2.5rem;
-            color: #ffffff;
-            margin-inline: 2rem;
-        }
-        /* Fin CSS Iconos RRSS */
+/* Fin QuienSoy */
+/* Inicio Habilidades */
+.habilidades {
+  height: 30rem;
+  background-color: #f8f8f8;
+  padding-top: 5rem;
+  padding-inline: 3rem;
+}
 
-    /* Fin CSS Footer */
+.misHabilidades h2 {
+  font-size: 2.5rem;
+  color: #363940;
+}
 
+.habilidad h3 {
+  color: #363940;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 2.5rem;
+}
+
+/* Inicio Barra de Progreso */
+:root {
+  --bar-color: grey;
+  --fill-size: 0%;
+}
+
+.progresoBarra {
+  position: relative;
+  width: 7rem;
+  height: 2em;
+  background-color: #a9a9a9;
+  border-radius: 0.3rem;
+  border-color: #000000;
+  border-style: solid;
+  border-width: 0.1rem;
+  overflow: hidden;
+}
+
+#soporte {
+  width: 95%;
+}
+
+#html {
+  width: 90%;
+}
+
+#javascript {
+  width: 89%;
+}
+
+#tutoria {
+  width: 95%;
+}
+
+/* Fin Barra de Progreso */
+/* Fin Habilidades */
 /* ============================= */
-
-    /* Inicio Conoceme */
-
-    .seccionConoceme {
-        height: 20rem;
-        background-color: #ffffff;
-        margin-inline: auto;
-        margin-bottom: 2rem;
-    }
-
-    .seccionConocemeTitulo {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
-    }
-
-    .seccionConocemeTitulo h2 {
-        color: #363940;
-        text-transform: uppercase;
-        font-size: 3rem;
-        margin-top: 5rem;
-        font-weight: bold;
-    }
-
-    .seccionConocemeTitulo p {
-        color: #505050;
-        font-size: 2rem;
-
-    }
-
-    .divisor {
-        width: 100%;
-        height: 2.3rem;
-        background: url(../img/devider.png) no-repeat center center;
-        margin: 0.5rem 0 1rem;
-    }
-    
-    /* Fin Conoceme */
-
-    /* Inicio Descarga */
-
-    .descarga {
-        background-color: #f8f8f8;
-        height: 23rem;
-    }
-
-    .descargaCv h3 {
-        display: block;
-        color: #363940;
-        text-transform: uppercase;
-        font-size: 3rem;
-        margin-top: 5rem;
-        font-weight: bold;
-        text-align: left;
-        height: 5rem;
-    }
-
-    .descargaCv {
-        width: 82rem;
-    }
-
-    .descargaCv p {
-        color: #363940;
-        font-size: 1.7rem;
-    }
-
-    .botonDescarga {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        height: 20rem;
-        align-content: center;
-        width: 23rem;
-        justify-content: end;
-    }
-
-    .botonDescargaCV {
-        background-color: #363940;
-        border: 0.2rem solid #a9a9a9;
-        font-size: 1.9rem;
-        font-weight: 400;
-        padding: 0.8rem 1.2rem;
-        touch-action: manipulation;
-        cursor: pointer;
-        color: #ffffff;
-        text-decoration: none;
-        width: 15rem;
-        height: 4.9rem;
-        text-align: center;
-    }
-
-    /* Fin Descarga */
-
-    /* Inicio QuienSoy */
-
-    .quienSoy {
-        height: 30rem;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-content: center;
-    }
-    
-    .fa-user, .fa-gem, .fa-heart, .fa-clock  {
-        font-size: 3rem;
-        margin: 0rem;
-    }
-
-    .iconoQuienSoy {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin-inline: 1rem;
-        margin-top: 10px;
-    }
-
-    .infoQuienSoy {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .infoQuienSoy h4 {
-        display: flex;
-        font-size: 1.8rem;
-        font-weight: bolder;
-        margin-top: 1.5rem;
-        margin-bottom: 2rem;
-    }    
-
-    .infoQuienSoy p {
-        font-size: 1.7rem;
-        text-align: left;
-    }
-
-    .cardQuienSoy {
-        height: 25rem;
-        display: flex;
-        margin-top: 5rem;
-        width: 27.4rem;
-    }
-
-    /* Fin QuienSoy */
-
-    /* Inicio Habilidades */
-    .habilidades {
-        height: 30rem;
-        background-color: #f8f8f8;
-        padding-top: 5rem;        
-        padding-inline: 3rem;
-    }
-
-    .misHabilidades h2{
-        font-size: 2.5rem;
-        color: #363940;
-
-    }
-
-    .habilidad h3 {
-        color: #363940;
-        font-size: 1.5rem;
-        font-weight: bold;
-        text-align: left;
-        margin-top: 2.5rem;
-    }
-    
-        /* Inicio Barra de Progreso */
-
-        :root {
-            --bar-color: grey;
-            --fill-size: 0%;
-        }
-
-        .progresoBarra {
-            position: relative;
-            width: 7rem;
-            height: 2em;
-            background-color: #a9a9a9;
-            border-radius: 0.3rem;
-            border-color: #000000;
-            border-style: solid;
-            border-width: 0.1rem;
-            overflow: hidden;
-        }
-
-        #soporte {
-            width: 95%;
-        }
-
-        #html {
-            width: 90%;
-        }
-
-        #javascript {
-            width: 89%;
-        }
-
-        #tutoria {
-            width: 95%;
-        }
-
-        /* Fin Barra de Progreso */
-
-    /* Fin Habilidades */
-
-/* ============================= */
-
 /* Inicio Experiencia */
+/* Inicio Trayectoria */
+.cardTrayectoria {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  max-width: 30rem;
+  margin-inline: 3rem;
+}
+.cardTrayectoria h3 {
+  color: #363940;
+}
 
-    /* Inicio Trayectoria */
+.iconoTrayectoria {
+  text-align: center;
+  font-size: 5rem;
+}
 
-    .cardTrayectoria {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        max-width: 30rem;
-        margin-inline: 3rem;
-    }
+.trayectoriaInfo .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 3.2rem;
+}
 
-    .cardTrayectoria h3 {
-        color: #363940;
-    }
+.parrafoTrayectoria {
+  font-size: 2rem;
+}
 
-    .iconoTrayectoria {
-        text-align: center;
-        font-size: 5rem;
-    }
+.fa-chevron-left, .fa-chevron-right {
+  font-size: 3rem;
+  color: #363940;
+  margin-top: 6rem;
+}
 
-    .trayectoriaInfo .row {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-bottom: 3.2rem;
-    }
+.carousel-indicators [data-bs-target] {
+  background-color: #363940;
+}
 
-    .parrafoTrayectoria {
-        font-size: 2rem;
-    }
+.carousel-item {
+  text-align: center;
+  margin-top: 7rem;
+}
 
-    .fa-chevron-left, .fa-chevron-right {
-        font-size: 3rem;
-        color: #363940;
-        margin-top: 6rem;
-    }
+.carousel-indicators {
+  margin-bottom: 7rem;
+}
 
-    .carousel-indicators [data-bs-target] {
-        background-color: #363940;
-    }
+/* Fin Trayectoria */
+/* Inicio Testimonios */
+.testimonios {
+  background-color: #f8f8f8;
+  height: 31rem;
+}
 
-    .carousel-item {
-        text-align: center;
-        margin-top: 7rem;
-    }
+.carrusel {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
 
-    .carousel-indicators {
-        margin-bottom: 7rem;
-    }
+.testimonio {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-    /* Fin Trayectoria */
-
-    /* Inicio Testimonios */
-
-    .testimonios {
-        background-color: #f8f8f8;
-        height: 31rem;
-    }
-
-    .carrusel {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-
-    .testimonio {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    /* Fin Testimonios */
-
+/* Fin Testimonios */
 /* Fin Experiencia */
-
 /* Inicio Filosofía */
+/* Inicio Filosofía Título */
+.seccionFilosofia {
+  height: 27rem;
+  background-color: #ffffff;
+  margin-inline: auto;
+  margin-bottom: 2rem;
+}
 
-    /* Inicio Filosofía Título */
+.seccionFilosofiaTitulo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+.seccionFilosofiaTitulo h2 {
+  color: #363940;
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin-top: 5rem;
+  font-weight: bold;
+}
+.seccionFilosofiaTitulo p {
+  color: #505050;
+  font-size: 2rem;
+}
 
-    .seccionFilosofia {
-        height: 27rem;
-        background-color: #ffffff;
-        margin-inline: auto;
-        margin-bottom: 2rem;
-    }
+/* Fin Filosofía Título */
+/* Inicio Sección Datos Relevantes */
+.cardDatosRelevantes {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  max-width: 37rem;
+  margin-inline: 1.5rem;
+}
+.cardDatosRelevantes h3 {
+  color: #363940;
+}
+.cardDatosRelevantes p {
+  color: #505050;
+  font-size: 2rem;
+}
 
-    .seccionFilosofiaTitulo {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
-    }
+.seccionDatosRelevantesTitulo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 3rem;
+}
+.seccionDatosRelevantesTitulo h2 {
+  color: #363940;
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin-top: 5rem;
+  font-weight: bold;
+}
 
-    .seccionFilosofiaTitulo h2 {
-        color: #363940;
-        text-transform: uppercase;
-        font-size: 3rem;
-        margin-top: 5rem;
-        font-weight: bold;
-    }
+/* Fin Sección Datos Relevantes */
+/* Inicio Cunter */
+.counter {
+  font-family: "Roboto", sans-serif;
+  font-size: 4em;
+}
+.counter:not(.is-visible) {
+  visibility: hidden;
+}
 
-    .seccionFilosofiaTitulo p {
-        color: #505050;
-        font-size: 2rem;
-    }
+/* Fin Counter */
+/* Inicio Info Datos Relevantes */
+.infoRelevante .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
 
-    /* Fin Filosofía Título */
-
-    /* Inicio Sección Datos Relevantes */
-
-    .cardDatosRelevantes {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        max-width: 37rem;
-        margin-inline: 1.5rem;
-    }
-
-    .cardDatosRelevantes h3 {
-        color: #363940;
-    }
-
-
-    .seccionDatosRelevantes {
-        height: 51.3rem;
-        background-color: #ffffff;
-        margin-inline: auto;
-        margin-bottom: 2rem;
-        background-color: #f8f8f8;
-    }
-
-    .seccionDatosRelevantesTitulo {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
-        margin-bottom: 3rem;
-    }
-
-    .seccionDatosRelevantesTitulo h2 {
-        color: #363940;
-        text-transform: uppercase;
-        font-size: 3rem;
-        margin-top: 5rem;
-        font-weight: bold;
-    }
-
-    .seccionDatosRelevantes p {
-        color: #505050;
-        font-size: 2rem;
-
-    }
-
-    /* Fin Sección Datos Relevantes */
-
-    /* Inicio Cunter */
-
-    .counter {
-        font-family: 'Roboto', sans-serif;
-        font-size: 4em;
-    }
-
-    .counter:not(.is-visible) {
-        visibility: hidden;
-    }
-
-    /* Fin Counter */
-
-    /* Inicio Info Datos Relevantes */
-
-    .infoRelevante .row {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-bottom: 0.5rem;
-    }
-
-    /* Fin Info Datos Relevantes */
-
-
+/* Fin Info Datos Relevantes */
 /* Fin Filosofía */
-
 /* Inicio Contacto */
+/* Inicio Contacto Título */
+.seccionContacto {
+  height: 20rem;
+  background-color: #ffffff;
+  margin-inline: auto;
+  margin-bottom: 2rem;
+}
 
-    /* Inicio Contacto Título */
+.seccionContactoTitulo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+.seccionContactoTitulo h2 {
+  color: #363940;
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin-top: 5rem;
+  font-weight: bold;
+}
+.seccionContactoTitulo p {
+  color: #505050;
+  font-size: 2rem;
+}
 
-    .seccionContacto {
-        height: 20rem;
-        background-color: #ffffff;
-        margin-inline: auto;
-        margin-bottom: 2rem;
-    }
+/* Fin Contacto Título */
+/* Inicio Info Contacto */
+.seccionInfoContacto {
+  height: 72rem;
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 
-    .seccionContactoTitulo {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
-    }
+.infoGeneral {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-left: 5rem;
+}
+.infoGeneral span {
+  margin-top: 5rem;
+}
+.infoGeneral .text-center p {
+  margin-bottom: 6.5rem;
+}
 
-    .seccionContactoTitulo h2 {
-        color: #363940;
-        text-transform: uppercase;
-        font-size: 3rem;
-        margin-top: 5rem;
-        font-weight: bold;
-    }
+.infoGeneral h3, .formulario h3, .mapa h3, .redesSociales h3 {
+  display: block;
+  color: #363940;
+  text-transform: uppercase;
+  font-size: 2.3rem;
+  margin-top: 5rem;
+  font-weight: bold;
+  text-align: center;
+  height: 5rem;
+}
 
-    .seccionContactoTitulo p {
-        color: #505050;
-        font-size: 2rem;
-    }
+/* Inicio CSS Formulario */
+.formulario {
+  display: flex;
+  flex-direction: column;
+  width: 33.3%;
+  align-items: center;
+  text-align: center;
+  font-size: 1.8rem;
+}
 
-    /* Fin Contacto Título */
+.formularioContacto {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin-top: 3rem;
+}
 
-    /* Inicio Info Contacto */
+.botonFormulario {
+  color: #363940;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  text-align: center;
+  background: none;
+  border-color: #a9a9a9;
+}
 
-    .seccionInfoContacto {
-        height: 72rem;
-        background-color: #f8f8f8;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
+.botonEnviar, .botonLimpiar {
+  width: 15rem;
+  margin-inline: 3rem;
+}
 
-    .infoGeneral {
-        display: flex;
-        flex-direction: column;
-        width: 30%;
-        margin-left: 5rem;
-    }
+.textInfotmacion {
+  height: 13.3rem;
+}
 
-    .infoGeneral span {
-        margin-top: 5rem;
-    }
+/* Fin CSS Formulario */
+.mapa {
+  display: flex;
+  flex-direction: column;
+  width: 33.3%;
+}
 
-    .infoGeneral .text-center p{
-        margin-bottom: 6.5rem;
-    }
+iframe {
+  margin-top: 5rem;
+}
 
-    .infoGeneral h3, .formulario h3, .mapa h3, .redesSociales h3 {
-        display: block;
-        color: #363940;
-        text-transform: uppercase;
-        font-size: 2.3rem;
-        margin-top: 5rem;
-        font-weight: bold;
-        text-align: center;
-        height: 5rem;
-    }
+.infoContacto {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
 
-    /* Inicio CSS Formulario */
+input, textarea {
+  width: 40rem;
+}
 
-    .formulario {
-        text-align: center;
-        font-size: 1.8rem;
-    }
+form .formulario {
+  align-items: baseline;
+}
 
-    .botonFormulario {
-        color: #363940;
-        font-size: 1.5rem;
-        padding: 0.5rem;
-        text-align: center;
-        background: none;
-        border-color: #a9a9a9;
-    }
+label {
+  align-items: baseline;
+}
 
-    .botonEnviar, .botonLimpiar {
-        width: 15rem;
-        margin-inline: 3rem;
-    }
+/* Fin Info Contacto */
+/* Inicio Sección RRSS */
+.seccionRRSS {
+  height: 30rem;
+  background-color: #ffffff;
+}
 
-    .formulario {
-        display: flex;
-        flex-direction: column;
-        width: 33.3%;
-        align-items: center;
-    }
+.redesSociales p {
+  color: #505050;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 4rem;
+}
 
-    .formularioContacto {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-        margin-top: 3rem;
-    }
+.botonesRRSS {
+  color: #363940;
+  margin-block: 5rem;
+  font-size: 3.5rem;
+}
 
-    .textInfotmacion {
-        height: 13.3rem;
-    }
+.botoneraRRSS {
+  text-align: center;
+}
 
-    /* Fin CSS Formulario */
-
-    .mapa {
-        display: flex;
-        flex-direction: column;
-        width: 33.3%;
-    }
-
-    iframe {
-        margin-top: 5rem;
-    }
-
-    .infoContacto {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-    }
-
-    input, textarea {
-        width: 40rem;
-    }
-
-    form .formulario {
-        align-items: baseline;
-    }
-
-    label {
-        align-items: baseline;
-    }
-
-    /* Fin Info Contacto */
-
-    /* Inicio Sección RRSS */
-
-    .seccionRRSS {
-        height: 30rem;
-        background-color: #ffffff;
-    }
-
-    .redesSociales p {
-        color: #505050;
-        font-size: 2rem;
-        text-align: center;
-        margin-top: 4rem;
-    }
-
-    .botonesRRSS {
-        color: #363940;
-        margin-block: 5rem;
-        font-size: 3.5rem;
-    }
-
-    .botoneraRRSS {
-        text-align: center;
-    }
-
-    /* Fin Sección RRSS */
-
+/* Fin Sección RRSS */
 /* Fin Contacto */
-
 /* ============================= */
-
-    /* Media Queries */
-
-    /* De 0px a 479px */
-    @media screen and (max-width: 479px) {
-        
-        /* Inicio index */
-        .footerStyle article p {
-            color: #ffffff;
-            display: flex;
-            font-size: 0.95rem;
-            width: 85vw;
-            justify-content: center;
-            margin-bottom: 0rem;
-            padding-left: 0;
-            margin-left: 0;
-        }
-
-        .copyright {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-self: center;
-        }
-
-        .tituloMain h1 {            
-            font-size: 3rem;
-            padding-top: 3rem;
-        }
-
-        .tituloMain h2 {            
-            font-size: 3rem;
-        }
-
-        .tituloMain p {            
-            font-size: 1.5rem;
-        }
-
-        .botonConoceme {
-            display: flex;
-            padding-bottom: 2rem;
-        }
-
-        /* Fin index */
-
-        /* Inicio Conoceme */
-
-        .quienSoy {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            height: 93rem;
-        }
-
-        .seccionConocemeTitulo h2 {
-            color: #363940;
-            text-transform: uppercase;
-            font-size: 2.5rem;
-            margin-top: 3rem;
-            font-weight: bold;
-        }
-
-        .seccionConocemeTitulo p {
-            color: #505050;
-            font-size: 1.5rem;
-        }
-
-        .seccionConoceme {
-            height: 14rem;
-        }
-
-        .descargaCv {
-            width: 100vw;
-        }
-
-        .descargaCv h3 {
-            display: block;
-            color: #363940;
-            text-transform: uppercase;
-            font-size: 2rem;
-            margin-top: 3rem;
-            font-weight: bold;
-            text-align: center;
-            height: 3rem;
-        }
-
-        .descargaCv p {
-            text-align: center;
-        }
-
-        .descarga {
-            background-color: #f8f8f8;
-            height: 32rem;
-        }
-
-        .botonDescarga {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            height: 9rem;
-            align-content: center;
-            width: 100%;
-            justify-content: center;
-        }
-
-        .botonDescargaCV {
-            background-color: #363940;
-            border: 0.2rem solid #a9a9a9;
-            font-size: 1.5rem;
-            font-weight: 400;
-            padding: 0.8rem 1.2rem;
-            touch-action: manipulation;
-            cursor: pointer;
-            color: #ffffff;
-            text-decoration: none;
-            width: 12rem;
-            height: 4.4rem;
-            text-align: center;
-        }
-
-        .quienSoy .row .cardQuienSoy {
-            width: 100%;
-            padding-inline: 2rem;
-        }
-
-        .cardQuienSoy {
-            margin-top: 2.5rem;
-            height: 20rem;
-        }
-
-        .habilidades {
-            height: 39rem;
-            background-color: #f8f8f8;
-            padding-top: 3.5rem;
-            padding-inline: 3rem;
-        }
-
-        .habilidad h3 {
-            text-align: center;
-        }
-
-        /* Fin Conoceme */
-
-    }
-    
-    /* De 480px a 767px */
-    @media screen and (min-width: 480px) and (max-width: 767px) {
-
-        /* Inicio index */
-        .footerStyle article p {
-            color: #ffffff;
-            display: flex;
-            font-size: 0.95rem;
-            width: 85vw;
-            justify-content: center;
-            margin-bottom: 0rem;
-            padding-left: 0;
-            margin-left: 0;
-        }
-
-        .copyright {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-self: center;
-        }
-
-        .tituloMain h1 {            
-            font-size: 3rem;
-            padding-top: 3rem;
-        }
-
-        .tituloMain h2 {            
-            font-size: 3rem;
-        }
-
-        .tituloMain p {            
-            font-size: 1.5rem;
-        }
-
-        .botonConoceme {
-            display: flex;
-            padding-bottom: 2rem;
-        }
-
-        /* Fin index */
-
-        /* Inicio Conoceme */
-
-        .quienSoy {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            height: 69rem;
-        }
-
-        .seccionConocemeTitulo h2 {
-            color: #363940;
-            text-transform: uppercase;
-            font-size: 2.5rem;
-            margin-top: 3rem;
-            font-weight: bold;
-        }
-
-        .seccionConocemeTitulo p {
-            color: #505050;
-            font-size: 1.5rem;
-        }
-
-        .seccionConoceme {
-            height: 14rem;
-            width: 100%;
-        }
-
-        .seccionConocemeTitulo {
-            width: 100%;
-        }
-
-        .descargaCv {
-            width: 100vw;
-        }
-
-        .descargaCv h3 {
-            display: block;
-            color: #363940;
-            text-transform: uppercase;
-            font-size: 2rem;
-            margin-top: 3rem;
-            font-weight: bold;
-            text-align: center;
-            height: 3rem;
-        }
-
-        .descargaCv p {
-            text-align: center;
-        }
-
-        .descarga {
-            background-color: #f8f8f8;
-            height: 32rem;
-        }
-
-        .botonDescarga {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            height: 9rem;
-            align-content: center;
-            width: 100%;
-            justify-content: center;
-        }
-
-        .botonDescargaCV {
-            background-color: #363940;
-            border: 0.2rem solid #a9a9a9;
-            font-size: 1.5rem;
-            font-weight: 400;
-            padding: 0.8rem 1.2rem;
-            touch-action: manipulation;
-            cursor: pointer;
-            color: #ffffff;
-            text-decoration: none;
-            width: 12rem;
-            height: 4.4rem;
-            text-align: center;
-        }
-
-        .quienSoy .row .cardQuienSoy {
-            width: 100%;
-            padding-inline: 2rem;
-        }
-
-        .cardQuienSoy {
-            margin-top: 2.5rem;
-            height: 14rem;
-        }
-
-        .habilidades {
-            height: 39rem;
-            background-color: #f8f8f8;
-            padding-top: 3.5rem;
-            padding-inline: 3rem;
-        }
-
-        .habilidad h3 {
-            text-align: center;
-        }
-
-        /* Fin Conoceme */
-
-    }
-
-    
-    
-    /* De 768px a 1199px */
-    @media (min-width: 768px) and (max-width: 1199px) {
-
-        /* Inicio index */
-
-        .footerStyle article p {
-            color: #ffffff;
-            display: flex;
-            font-size: 1.3rem;
-            width: 85vw;
-            justify-content: center;
-            margin-bottom: 0rem;
-            padding-left: 0;
-            margin-left: 0;
-        }
-
-        .copyright {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-self: center;
-        }
-
-        .tituloMain h1 {            
-            font-size: 4rem;
-            padding-top: 2rem;
-        }
-
-        .tituloMain h2 {            
-            font-size: 4rem;
-        }
-
-        .tituloMain p {            
-            font-size: 2rem;
-        }
-
-        .botonConoceme {
-            display: flex;
-            padding-bottom: 2rem;
-        }
-
-        .liContainerFooter {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            flex-wrap: nowrap;
-            align-items: center;
-        }
-
-        .footerStyle .row {
-            max-height: 6rem;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-        }
-
-        /* Fin index */
-
-        /* Inicio Conoceme */
-
-        .quienSoy {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            height: 55rem;
-        }
-
-        .seccionConocemeTitulo h2 {
-            color: #363940;
-            text-transform: uppercase;
-            font-size: 3rem;
-            margin-top: 3.5rem;
-            font-weight: bold;
-        }
-
-        .seccionConocemeTitulo p {
-            color: #505050;
-            font-size: 2rem;
-        }
-
-        .seccionConoceme {
-            height: 14rem;
-        }
-
-        .descargaCv {
-            width: 100vw;
-        }
-
-        .descargaCv h3 {
-            display: block;
-            color: #363940;
-            text-transform: uppercase;
-            font-size: 2.5rem;
-            margin-top: 3.5rem;
-            font-weight: bold;
-            text-align: center;
-            height: 3.5rem;
-        }
-
-        .descargaCv p {
-            text-align: center;
-        }
-
-        .descarga {
-            background-color: #f8f8f8;
-            height: 28rem;
-        }
-
-        .botonDescarga {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            height: 9rem;
-            align-content: center;
-            width: 100%;
-            justify-content: center;
-        }
-
-        .botonDescargaCV {
-            background-color: #363940;
-            border: 0.2rem solid #a9a9a9;
-            font-size: 1.5rem;
-            font-weight: 400;
-            padding: 0.8rem 1.2rem;
-            touch-action: manipulation;
-            cursor: pointer;
-            color: #ffffff;
-            text-decoration: none;
-            width: 12rem;
-            height: 4.4rem;
-            text-align: center;
-        }
-
-        .quienSoy .row .cardQuienSoy {
-            width: 100%;
-            padding-inline: 1rem;
-            height: 10rem;
-        }
-
-        .quienSoy .container {
-            max-width: 70rem;
-        }
-
-        .cardQuienSoy {
-            margin-top: 2.5rem;
-            height: 20rem;
-        }
-
-        .habilidades {
-            height: 25rem;
-            background-color: #f8f8f8;
-            padding-top: 3.5rem;
-            padding-inline: 3rem;
-        }
-
-        .habilidad h3 {
-            text-align: center;
-        }
-
-        /* Fin Conoceme */
-
-    }
-    
-    /* De 1200px en adelante */
-    @media (min-width: 1200px) {
-        
-    }
+/* Media Queries */
+/* De 0px a 479px */
+@media screen and (max-width: 479px) {
+  /* Inicio index */
+  .footerStyle article p {
+    color: #ffffff;
+    display: flex;
+    font-size: 0.95rem;
+    width: 85vw;
+    justify-content: center;
+    margin-bottom: 0rem;
+    padding-left: 0;
+    margin-left: 0;
+  }
+  .copyright {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+  .tituloMain h1 {
+    font-size: 3rem;
+    padding-top: 3rem;
+  }
+  .tituloMain h2 {
+    font-size: 3rem;
+  }
+  .tituloMain p {
+    font-size: 1.5rem;
+  }
+  .botonConoceme {
+    display: flex;
+    padding-bottom: 2rem;
+  }
+  /* Fin index */
+  /* Inicio Conoceme */
+  .quienSoy {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 93rem;
+  }
+  .seccionConocemeTitulo h2 {
+    color: #363940;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    margin-top: 3rem;
+    font-weight: bold;
+  }
+  .seccionConocemeTitulo p {
+    color: #505050;
+    font-size: 1.5rem;
+  }
+  .seccionConoceme {
+    height: 14rem;
+  }
+  .descargaCv {
+    width: 100vw;
+  }
+  .descargaCv h3 {
+    display: block;
+    color: #363940;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-top: 3rem;
+    font-weight: bold;
+    text-align: center;
+    height: 3rem;
+  }
+  .descargaCv p {
+    text-align: center;
+  }
+  .descarga {
+    background-color: #f8f8f8;
+    height: 32rem;
+  }
+  .botonDescarga {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 9rem;
+    align-content: center;
+    width: 100%;
+    justify-content: center;
+  }
+  .botonDescargaCV {
+    background-color: #363940;
+    border: 0.2rem solid #a9a9a9;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 0.8rem 1.2rem;
+    touch-action: manipulation;
+    cursor: pointer;
+    color: #ffffff;
+    text-decoration: none;
+    width: 12rem;
+    height: 4.4rem;
+    text-align: center;
+  }
+  .quienSoy .row .cardQuienSoy {
+    width: 100%;
+    padding-inline: 2rem;
+    margin-top: 2.5rem;
+    height: 20rem;
+  }
+  .habilidades {
+    height: 39rem;
+    background-color: #f8f8f8;
+    padding-top: 3.5rem;
+    padding-inline: 3rem;
+  }
+  .habilidad h3 {
+    text-align: center;
+  }
+  /* Fin Conoceme */
+}
+/* De 480px a 767px */
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  /* Inicio index */
+  .footerStyle article p {
+    color: #ffffff;
+    display: flex;
+    font-size: 0.95rem;
+    width: 85vw;
+    justify-content: center;
+    margin-bottom: 0rem;
+    padding-left: 0;
+    margin-left: 0;
+  }
+  .copyright {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+  .tituloMain h1 {
+    font-size: 3rem;
+    padding-top: 3rem;
+  }
+  .tituloMain h2 {
+    font-size: 3rem;
+  }
+  .tituloMain p {
+    font-size: 1.5rem;
+  }
+  .botonConoceme {
+    display: flex;
+    padding-bottom: 2rem;
+  }
+  /* Fin index */
+  /* Inicio Conoceme */
+  .quienSoy {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 69rem;
+  }
+  .seccionConocemeTitulo h2 {
+    color: #363940;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    margin-top: 3rem;
+    font-weight: bold;
+  }
+  .seccionConocemeTitulo p {
+    color: #505050;
+    font-size: 1.5rem;
+  }
+  .seccionConocemeTitulo {
+    width: 100%;
+  }
+  .descargaCv {
+    width: 100vw;
+  }
+  .descargaCv h3 {
+    display: block;
+    color: #363940;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-top: 3rem;
+    font-weight: bold;
+    text-align: center;
+    height: 3rem;
+  }
+  .descargaCv p {
+    text-align: center;
+  }
+  .botonDescarga {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 9rem;
+    align-content: center;
+    width: 100%;
+    justify-content: center;
+  }
+  .botonDescargaCV {
+    background-color: #363940;
+    border: 0.2rem solid #a9a9a9;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 0.8rem 1.2rem;
+    touch-action: manipulation;
+    cursor: pointer;
+    color: #ffffff;
+    text-decoration: none;
+    width: 12rem;
+    height: 4.4rem;
+    text-align: center;
+  }
+  .quienSoy .row .cardQuienSoy {
+    width: 100%;
+    padding-inline: 2rem;
+    margin-top: 2.5rem;
+    height: 14rem;
+  }
+  .habilidades {
+    height: 39rem;
+    background-color: #f8f8f8;
+    padding-top: 3.5rem;
+    padding-inline: 3rem;
+  }
+  .habilidad h3 {
+    text-align: center;
+  }
+  /* Fin Conoceme */
+}
+/* De 768px a 1199px */
+@media (min-width: 768px) and (max-width: 1199px) {
+  /* Inicio index */
+  .footerStyle article p {
+    color: #ffffff;
+    display: flex;
+    font-size: 1.3rem;
+    width: 85vw;
+    justify-content: center;
+    margin-bottom: 0rem;
+    padding-left: 0;
+    margin-left: 0;
+  }
+  .footerStyle .row {
+    max-height: 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .copyright {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+  .tituloMain h1 {
+    font-size: 4rem;
+    padding-top: 2rem;
+  }
+  .tituloMain h2 {
+    font-size: 4rem;
+  }
+  .tituloMain p {
+    font-size: 2rem;
+  }
+  .botonConoceme {
+    display: flex;
+    padding-bottom: 2rem;
+  }
+  .liContainerFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  /* Fin index */
+  /* Inicio Conoceme */
+  .quienSoy {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 55rem;
+  }
+  .seccionConocemeTitulo h2 {
+    color: #363940;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-top: 3.5rem;
+    font-weight: bold;
+  }
+  .seccionConocemeTitulo p {
+    color: #505050;
+    font-size: 2rem;
+  }
+  .seccionConoceme {
+    height: 14rem;
+  }
+  .descargaCv {
+    width: 100vw;
+  }
+  .descargaCv h3 {
+    display: block;
+    color: #363940;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    margin-top: 3.5rem;
+    font-weight: bold;
+    text-align: center;
+    height: 3.5rem;
+  }
+  .descargaCv p {
+    text-align: center;
+  }
+  .descarga {
+    background-color: #f8f8f8;
+    height: 28rem;
+  }
+  .botonDescarga {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 9rem;
+    align-content: center;
+    width: 100%;
+    justify-content: center;
+  }
+  .botonDescargaCV {
+    background-color: #363940;
+    border: 0.2rem solid #a9a9a9;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 0.8rem 1.2rem;
+    touch-action: manipulation;
+    cursor: pointer;
+    color: #ffffff;
+    text-decoration: none;
+    width: 12rem;
+    height: 4.4rem;
+    text-align: center;
+  }
+  .quienSoy .row .cardQuienSoy {
+    width: 100%;
+    padding-inline: 1rem;
+    height: 10rem;
+  }
+  .quienSoy .container {
+    max-width: 70rem;
+  }
+  .cardQuienSoy {
+    margin-top: 2.5rem;
+    height: 20rem;
+  }
+  .habilidades {
+    height: 25rem;
+    background-color: #f8f8f8;
+    padding-top: 3.5rem;
+    padding-inline: 3rem;
+  }
+  .habilidad h3 {
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
