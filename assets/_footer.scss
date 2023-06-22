@@ -1,0 +1,74 @@
+/* ============================= */
+
+    /* Inicio CSS Footer */
+
+    .footerStyle {
+        background-color: #363940;
+        height: 6rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+    }
+
+    .footerStyle .liContainer li a {
+        margin-right: 5rem;
+    }
+
+    .footerStyle .row {
+        max-height: 6rem;
+    }
+
+    .copyright {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-height: 6rem;
+        display: flex;
+        align-items: center;
+
+    }
+
+
+    .copyright p {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-height: 6rem;
+        display: flex;
+        align-items: center;
+        margin-left: 5rem;
+
+    }
+
+    .footerStyle article p{
+        color: #ffffff;
+        display: flex;
+        font-size: 1.2rem;
+        width: 80vw;
+        justify-content: center;
+        margin-bottom: 0rem;
+        padding-left: 33%;
+    }
+
+    .liContainerFooter {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        margin-bottom: 0rem;
+        max-height: 6rem;
+    }
+
+        /* Inicio CSS Iconos RRSS */
+        .fa-brands {
+            font-size: 2.5rem;
+            color: #ffffff;
+            margin-inline: 2rem;
+        }
+        /* Fin CSS Iconos RRSS */
+
+    /* Fin CSS Footer */
+
+/* ============================= */

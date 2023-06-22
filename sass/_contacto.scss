@@ -1,0 +1,171 @@
+/* Inicio Contacto */
+
+    /* Inicio Contacto Título */
+
+    .seccionContacto {
+        height: 20rem;
+        background-color: #ffffff;
+        margin-inline: auto;
+        margin-bottom: 2rem;
+    }
+
+    .seccionContactoTitulo {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .seccionContactoTitulo h2 {
+        color: #363940;
+        text-transform: uppercase;
+        font-size: 3rem;
+        margin-top: 5rem;
+        font-weight: bold;
+    }
+
+    .seccionContactoTitulo p {
+        color: #505050;
+        font-size: 2rem;
+    }
+
+    /* Fin Contacto Título */
+
+    /* Inicio Info Contacto */
+
+    .seccionInfoContacto {
+        height: 72rem;
+        background-color: #f8f8f8;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .infoGeneral {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        margin-left: 5rem;
+    }
+
+    .infoGeneral span {
+        margin-top: 5rem;
+    }
+
+    .infoGeneral .text-center p{
+        margin-bottom: 6.5rem;
+    }
+
+    .infoGeneral h3, .formulario h3, .mapa h3, .redesSociales h3 {
+        display: block;
+        color: #363940;
+        text-transform: uppercase;
+        font-size: 2.3rem;
+        margin-top: 5rem;
+        font-weight: bold;
+        text-align: center;
+        height: 5rem;
+    }
+
+    /* Inicio CSS Formulario */
+
+    .formulario {
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
+    .botonFormulario {
+        color: #363940;
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        text-align: center;
+        background: none;
+        border-color: #a9a9a9;
+    }
+
+    .botonEnviar, .botonLimpiar {
+        width: 15rem;
+        margin-inline: 3rem;
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        width: 33.3%;
+        align-items: center;
+    }
+
+    .formularioContacto {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        margin-top: 3rem;
+    }
+
+    .textInfotmacion {
+        height: 13.3rem;
+    }
+
+    /* Fin CSS Formulario */
+
+    .mapa {
+        display: flex;
+        flex-direction: column;
+        width: 33.3%;
+    }
+
+    iframe {
+        margin-top: 5rem;
+    }
+
+    .infoContacto {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    input, textarea {
+        width: 40rem;
+    }
+
+    form .formulario {
+        align-items: baseline;
+    }
+
+    label {
+        align-items: baseline;
+    }
+
+    /* Fin Info Contacto */
+
+    /* Inicio Sección RRSS */
+
+    .seccionRRSS {
+        height: 30rem;
+        background-color: #ffffff;
+    }
+
+    .redesSociales p {
+        color: #505050;
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 4rem;
+    }
+
+    .botonesRRSS {
+        color: #363940;
+        margin-block: 5rem;
+        font-size: 3.5rem;
+    }
+
+    .botoneraRRSS {
+        text-align: center;
+    }
+
+    /* Fin Sección RRSS */
+
+/* Fin Contacto */
+
+/* ============================= */

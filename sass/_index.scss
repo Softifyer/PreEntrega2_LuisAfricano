@@ -1,7 +1,7 @@
 /* ============================= */
 
    /* Inicio CSS Reset */
-   html {
+    html {
     font-size: 62.5%;
 }
 
@@ -21,3 +21,80 @@ p {
 }
 
 /* Fin CSS Reset */
+
+/* ============================= */
+
+    /* Inicio index */
+
+        /* Inicio CSS Main */
+        
+        h1, h2, h3 {
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .backgroundMain {
+            background-image: url(../img/indexBackground.jpg);
+            background-size: cover;
+            background-repeat:no-repeat;
+            background-attachment: fixed;
+        }
+
+        
+
+        .backgroundMain, .tituloMain {
+            height: 88.2vh;
+        }
+
+        .tituloMain h1 {
+            font-size: 5.5rem;
+            padding-bottom: 1rem;
+            text-transform: uppercase;
+        }
+        .tituloMain h2 {
+            font-size: 4rem;        
+            padding-bottom: 1rem;
+        }
+        .tituloMain p {
+            font-size: 2rem;
+            color: #ffffff;
+            text-align: center;
+            padding-bottom: 4rem;
+        }
+
+        .tituloMain {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .botonConoceme {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .conoceme {
+            background: none;
+            border: 0.2rem solid #ffffff;
+            font-size: 1.4rem;
+            font-weight: 400;
+            padding: 0.8rem 1.2rem;
+            touch-action: manipulation;
+            cursor: pointer;
+            color: #ffffff;
+        }
+
+        .conoceme:hover {
+            background-color: #ffffff;
+            color: #363940;
+        }
+        
+
+        /* Fin CSS Main */
+
+    /* Fin index */
+
+/* ============================= */

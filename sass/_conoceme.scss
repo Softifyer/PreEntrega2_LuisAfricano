@@ -1,0 +1,247 @@
+/* ============================= */
+
+/* Inicio Conoceme */
+
+    /* Inicio CSS Descarga de CV */
+
+    .sectionInfo {
+        background: #ffffff;
+    }
+
+    .descargaCV {
+        color: #363940;
+        padding: 3rem;
+        height: 15rem;
+    } 
+
+    .descargaCV h2{
+        text-align: center;
+        font-size: 3rem;
+        padding: 2.5rem;
+        color: #363940;
+    }
+
+    .descargaCV p{
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
+    .descargaCV a{
+        color: #000000;
+        font-size: 2rem;
+        padding: 1rem 1rem 1rem 1rem;
+        text-align: center;
+    }
+
+    /* Fin CSS Descarga de CV */
+
+/* ============================= */
+
+/* ============================= */
+
+    /* Inicio Conoceme */
+
+    .seccionConoceme {
+        height: 20rem;
+        background-color: #ffffff;
+        margin-inline: auto;
+        margin-bottom: 2rem;
+    }
+
+    .seccionConocemeTitulo {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .seccionConocemeTitulo h2 {
+        color: #363940;
+        text-transform: uppercase;
+        font-size: 3rem;
+        margin-top: 5rem;
+        font-weight: bold;
+    }
+
+    .seccionConocemeTitulo p {
+        color: #505050;
+        font-size: 2rem;
+
+    }
+
+    .divisor {
+        width: 100%;
+        height: 2.3rem;
+        background: url(../img/devider.png) no-repeat center center;
+        margin: 0.5rem 0 1rem;
+    }
+    
+    /* Fin Conoceme */
+
+    /* Inicio Descarga */
+
+    .descarga {
+        background-color: #f8f8f8;
+        height: 23rem;
+    }
+
+    .descargaCv h3 {
+        display: block;
+        color: #363940;
+        text-transform: uppercase;
+        font-size: 3rem;
+        margin-top: 5rem;
+        font-weight: bold;
+        text-align: left;
+        height: 5rem;
+    }
+
+    .descargaCv {
+        width: 82rem;
+    }
+
+    .descargaCv p {
+        color: #363940;
+        font-size: 1.7rem;
+    }
+
+    .botonDescarga {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 20rem;
+        align-content: center;
+        width: 23rem;
+        justify-content: end;
+    }
+
+    .botonDescargaCV {
+        background-color: #363940;
+        border: 0.2rem solid #a9a9a9;
+        font-size: 1.9rem;
+        font-weight: 400;
+        padding: 0.8rem 1.2rem;
+        touch-action: manipulation;
+        cursor: pointer;
+        color: #ffffff;
+        text-decoration: none;
+        width: 15rem;
+        height: 4.9rem;
+        text-align: center;
+    }
+
+    /* Fin Descarga */
+
+    /* Inicio QuienSoy */
+
+    .quienSoy {
+        height: 30rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    
+    .fa-user, .fa-gem, .fa-heart, .fa-clock  {
+        font-size: 3rem;
+        margin: 0rem;
+    }
+
+    .iconoQuienSoy {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-inline: 1rem;
+        margin-top: 10px;
+    }
+
+    .infoQuienSoy {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .infoQuienSoy h4 {
+        display: flex;
+        font-size: 1.8rem;
+        font-weight: bolder;
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+    }    
+
+    .infoQuienSoy p {
+        font-size: 1.7rem;
+        text-align: left;
+    }
+
+    .cardQuienSoy {
+        height: 25rem;
+        display: flex;
+        margin-top: 5rem;
+        width: 27.4rem;
+    }
+
+    /* Fin QuienSoy */
+
+    /* Inicio Habilidades */
+    .habilidades {
+        height: 30rem;
+        background-color: #f8f8f8;
+        padding-top: 5rem;        
+        padding-inline: 3rem;
+    }
+
+    .misHabilidades h2{
+        font-size: 2.5rem;
+        color: #363940;
+
+    }
+
+    .habilidad h3 {
+        color: #363940;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: left;
+        margin-top: 2.5rem;
+    }
+    
+        /* Inicio Barra de Progreso */
+
+        :root {
+            --bar-color: grey;
+            --fill-size: 0%;
+        }
+
+        .progresoBarra {
+            position: relative;
+            width: 7rem;
+            height: 2em;
+            background-color: #a9a9a9;
+            border-radius: 0.3rem;
+            border-color: #000000;
+            border-style: solid;
+            border-width: 0.1rem;
+            overflow: hidden;
+        }
+
+        #soporte {
+            width: 95%;
+        }
+
+        #html {
+            width: 90%;
+        }
+
+        #javascript {
+            width: 89%;
+        }
+
+        #tutoria {
+            width: 95%;
+        }
+
+        /* Fin Barra de Progreso */
+
+    /* Fin Habilidades */
+
+/* ============================= */

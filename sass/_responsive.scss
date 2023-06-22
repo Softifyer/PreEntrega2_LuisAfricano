@@ -1,0 +1,462 @@
+/* ============================= */
+
+    /* Media Queries */
+
+    /* De 0px a 479px */
+    @media screen and (max-width: 479px) {
+        
+        /* Inicio index */
+        .footerStyle article p {
+            color: #ffffff;
+            display: flex;
+            font-size: 0.95rem;
+            width: 85vw;
+            justify-content: center;
+            margin-bottom: 0rem;
+            padding-left: 0;
+            margin-left: 0;
+        }
+
+        .copyright {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+        }
+
+        .tituloMain h1 {            
+            font-size: 3rem;
+            padding-top: 3rem;
+        }
+
+        .tituloMain h2 {            
+            font-size: 3rem;
+        }
+
+        .tituloMain p {            
+            font-size: 1.5rem;
+        }
+
+        .botonConoceme {
+            display: flex;
+            padding-bottom: 2rem;
+        }
+
+        /* Fin index */
+
+        /* Inicio Conoceme */
+
+        .quienSoy {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: 93rem;
+        }
+
+        .seccionConocemeTitulo h2 {
+            color: #363940;
+            text-transform: uppercase;
+            font-size: 2.5rem;
+            margin-top: 3rem;
+            font-weight: bold;
+        }
+
+        .seccionConocemeTitulo p {
+            color: #505050;
+            font-size: 1.5rem;
+        }
+
+        .seccionConoceme {
+            height: 14rem;
+        }
+
+        .descargaCv {
+            width: 100vw;
+        }
+
+        .descargaCv h3 {
+            display: block;
+            color: #363940;
+            text-transform: uppercase;
+            font-size: 2rem;
+            margin-top: 3rem;
+            font-weight: bold;
+            text-align: center;
+            height: 3rem;
+        }
+
+        .descargaCv p {
+            text-align: center;
+        }
+
+        .descarga {
+            background-color: #f8f8f8;
+            height: 32rem;
+        }
+
+        .botonDescarga {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            height: 9rem;
+            align-content: center;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .botonDescargaCV {
+            background-color: #363940;
+            border: 0.2rem solid #a9a9a9;
+            font-size: 1.5rem;
+            font-weight: 400;
+            padding: 0.8rem 1.2rem;
+            touch-action: manipulation;
+            cursor: pointer;
+            color: #ffffff;
+            text-decoration: none;
+            width: 12rem;
+            height: 4.4rem;
+            text-align: center;
+        }
+
+        .quienSoy .row .cardQuienSoy {
+            width: 100%;
+            padding-inline: 2rem;
+        }
+
+        .cardQuienSoy {
+            margin-top: 2.5rem;
+            height: 20rem;
+        }
+
+        .habilidades {
+            height: 39rem;
+            background-color: #f8f8f8;
+            padding-top: 3.5rem;
+            padding-inline: 3rem;
+        }
+
+        .habilidad h3 {
+            text-align: center;
+        }
+
+        /* Fin Conoceme */
+
+    }
+    
+    /* De 480px a 767px */
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+
+        /* Inicio index */
+        .footerStyle article p {
+            color: #ffffff;
+            display: flex;
+            font-size: 0.95rem;
+            width: 85vw;
+            justify-content: center;
+            margin-bottom: 0rem;
+            padding-left: 0;
+            margin-left: 0;
+        }
+
+        .copyright {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+        }
+
+        .tituloMain h1 {            
+            font-size: 3rem;
+            padding-top: 3rem;
+        }
+
+        .tituloMain h2 {            
+            font-size: 3rem;
+        }
+
+        .tituloMain p {            
+            font-size: 1.5rem;
+        }
+
+        .botonConoceme {
+            display: flex;
+            padding-bottom: 2rem;
+        }
+
+        /* Fin index */
+
+        /* Inicio Conoceme */
+
+        .quienSoy {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: 69rem;
+        }
+
+        .seccionConocemeTitulo h2 {
+            color: #363940;
+            text-transform: uppercase;
+            font-size: 2.5rem;
+            margin-top: 3rem;
+            font-weight: bold;
+        }
+
+        .seccionConocemeTitulo p {
+            color: #505050;
+            font-size: 1.5rem;
+        }
+
+        .seccionConoceme {
+            height: 14rem;
+            width: 100%;
+        }
+
+        .seccionConocemeTitulo {
+            width: 100%;
+        }
+
+        .descargaCv {
+            width: 100vw;
+        }
+
+        .descargaCv h3 {
+            display: block;
+            color: #363940;
+            text-transform: uppercase;
+            font-size: 2rem;
+            margin-top: 3rem;
+            font-weight: bold;
+            text-align: center;
+            height: 3rem;
+        }
+
+        .descargaCv p {
+            text-align: center;
+        }
+
+        .descarga {
+            background-color: #f8f8f8;
+            height: 32rem;
+        }
+
+        .botonDescarga {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            height: 9rem;
+            align-content: center;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .botonDescargaCV {
+            background-color: #363940;
+            border: 0.2rem solid #a9a9a9;
+            font-size: 1.5rem;
+            font-weight: 400;
+            padding: 0.8rem 1.2rem;
+            touch-action: manipulation;
+            cursor: pointer;
+            color: #ffffff;
+            text-decoration: none;
+            width: 12rem;
+            height: 4.4rem;
+            text-align: center;
+        }
+
+        .quienSoy .row .cardQuienSoy {
+            width: 100%;
+            padding-inline: 2rem;
+        }
+
+        .cardQuienSoy {
+            margin-top: 2.5rem;
+            height: 14rem;
+        }
+
+        .habilidades {
+            height: 39rem;
+            background-color: #f8f8f8;
+            padding-top: 3.5rem;
+            padding-inline: 3rem;
+        }
+
+        .habilidad h3 {
+            text-align: center;
+        }
+
+        /* Fin Conoceme */
+
+    }
+
+    
+    
+    /* De 768px a 1199px */
+    @media (min-width: 768px) and (max-width: 1199px) {
+
+        /* Inicio index */
+
+        .footerStyle article p {
+            color: #ffffff;
+            display: flex;
+            font-size: 1.3rem;
+            width: 85vw;
+            justify-content: center;
+            margin-bottom: 0rem;
+            padding-left: 0;
+            margin-left: 0;
+        }
+
+        .copyright {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+        }
+
+        .tituloMain h1 {            
+            font-size: 4rem;
+            padding-top: 2rem;
+        }
+
+        .tituloMain h2 {            
+            font-size: 4rem;
+        }
+
+        .tituloMain p {            
+            font-size: 2rem;
+        }
+
+        .botonConoceme {
+            display: flex;
+            padding-bottom: 2rem;
+        }
+
+        .liContainerFooter {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: nowrap;
+            align-items: center;
+        }
+
+        .footerStyle .row {
+            max-height: 6rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        /* Fin index */
+
+        /* Inicio Conoceme */
+
+        .quienSoy {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: 55rem;
+        }
+
+        .seccionConocemeTitulo h2 {
+            color: #363940;
+            text-transform: uppercase;
+            font-size: 3rem;
+            margin-top: 3.5rem;
+            font-weight: bold;
+        }
+
+        .seccionConocemeTitulo p {
+            color: #505050;
+            font-size: 2rem;
+        }
+
+        .seccionConoceme {
+            height: 14rem;
+        }
+
+        .descargaCv {
+            width: 100vw;
+        }
+
+        .descargaCv h3 {
+            display: block;
+            color: #363940;
+            text-transform: uppercase;
+            font-size: 2.5rem;
+            margin-top: 3.5rem;
+            font-weight: bold;
+            text-align: center;
+            height: 3.5rem;
+        }
+
+        .descargaCv p {
+            text-align: center;
+        }
+
+        .descarga {
+            background-color: #f8f8f8;
+            height: 28rem;
+        }
+
+        .botonDescarga {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            height: 9rem;
+            align-content: center;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .botonDescargaCV {
+            background-color: #363940;
+            border: 0.2rem solid #a9a9a9;
+            font-size: 1.5rem;
+            font-weight: 400;
+            padding: 0.8rem 1.2rem;
+            touch-action: manipulation;
+            cursor: pointer;
+            color: #ffffff;
+            text-decoration: none;
+            width: 12rem;
+            height: 4.4rem;
+            text-align: center;
+        }
+
+        .quienSoy .row .cardQuienSoy {
+            width: 100%;
+            padding-inline: 1rem;
+            height: 10rem;
+        }
+
+        .quienSoy .container {
+            max-width: 70rem;
+        }
+
+        .cardQuienSoy {
+            margin-top: 2.5rem;
+            height: 20rem;
+        }
+
+        .habilidades {
+            height: 25rem;
+            background-color: #f8f8f8;
+            padding-top: 3.5rem;
+            padding-inline: 3rem;
+        }
+
+        .habilidad h3 {
+            text-align: center;
+        }
+
+        /* Fin Conoceme */
+
+    }
+    
+    /* De 1200px en adelante */
+    @media (min-width: 1200px) {
+        
+    }

@@ -1,0 +1,78 @@
+/* ============================= */
+
+/* Inicio Experiencia */
+
+    /* Inicio Trayectoria */
+
+    .cardTrayectoria {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        max-width: 30rem;
+        margin-inline: 3rem;
+    }
+
+    .cardTrayectoria h3 {
+        color: #363940;
+    }
+
+    .iconoTrayectoria {
+        text-align: center;
+        font-size: 5rem;
+    }
+
+    .trayectoriaInfo .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 3.2rem;
+    }
+
+    .parrafoTrayectoria {
+        font-size: 2rem;
+    }
+
+    .fa-chevron-left, .fa-chevron-right {
+        font-size: 3rem;
+        color: #363940;
+        margin-top: 6rem;
+    }
+
+    .carousel-indicators [data-bs-target] {
+        background-color: #363940;
+    }
+
+    .carousel-item {
+        text-align: center;
+        margin-top: 7rem;
+    }
+
+    .carousel-indicators {
+        margin-bottom: 7rem;
+    }
+
+    /* Fin Trayectoria */
+
+    /* Inicio Testimonios */
+
+    .testimonios {
+        background-color: #f8f8f8;
+        height: 31rem;
+    }
+
+    .carrusel {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .testimonio {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Fin Testimonios */
+
+/* Fin Experiencia */

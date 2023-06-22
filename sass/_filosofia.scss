@@ -1,0 +1,108 @@
+/* Inicio Filosofía */
+
+    /* Inicio Filosofía Título */
+
+    .seccionFilosofia {
+        height: 27rem;
+        background-color: #ffffff;
+        margin-inline: auto;
+        margin-bottom: 2rem;
+    }
+
+    .seccionFilosofiaTitulo {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .seccionFilosofiaTitulo h2 {
+        color: #363940;
+        text-transform: uppercase;
+        font-size: 3rem;
+        margin-top: 5rem;
+        font-weight: bold;
+    }
+
+    .seccionFilosofiaTitulo p {
+        color: #505050;
+        font-size: 2rem;
+    }
+
+    /* Fin Filosofía Título */
+
+    /* Inicio Sección Datos Relevantes */
+
+    .cardDatosRelevantes {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        max-width: 37rem;
+        margin-inline: 1.5rem;
+    }
+
+    .cardDatosRelevantes h3 {
+        color: #363940;
+    }
+
+
+    .seccionDatosRelevantes {
+        height: 51.3rem;
+        background-color: #ffffff;
+        margin-inline: auto;
+        margin-bottom: 2rem;
+        background-color: #f8f8f8;
+    }
+
+    .seccionDatosRelevantesTitulo {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 3rem;
+    }
+
+    .seccionDatosRelevantesTitulo h2 {
+        color: #363940;
+        text-transform: uppercase;
+        font-size: 3rem;
+        margin-top: 5rem;
+        font-weight: bold;
+    }
+
+    .seccionDatosRelevantes p {
+        color: #505050;
+        font-size: 2rem;
+
+    }
+
+    /* Fin Sección Datos Relevantes */
+
+    /* Inicio Cunter */
+
+    .counter {
+        font-family: 'Roboto', sans-serif;
+        font-size: 4em;
+    }
+
+    .counter:not(.is-visible) {
+        visibility: hidden;
+    }
+
+    /* Fin Counter */
+
+    /* Inicio Info Datos Relevantes */
+
+    .infoRelevante .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 0.5rem;
+    }
+
+    /* Fin Info Datos Relevantes */
+
+
+/* Fin Filosofía */
