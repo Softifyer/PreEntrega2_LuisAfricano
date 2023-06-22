@@ -181,6 +181,29 @@
         width: 27.4rem;
     }
 
+    .pulse:hover, .pulse:focus {
+    -webkit-animation: pulse 1s;
+    animation: pulse 1s;
+    box-shadow: 0 0 0 2rem rgba(255, 255, 255, 0);
+    }
+
+    @-webkit-keyframes pulse {
+        0% {
+            box-shadow: 0 0 0 0 var(--hover);
+        }
+    }
+    
+    @keyframes pulse {
+        0% {
+            box-shadow: 0 0 0 0 var(--hover);
+        }
+    }
+
+    .pulse {
+        --color: #ffffff;
+        --hover: #333333;
+    }
+
     /* Fin QuienSoy */
 
     /* Inicio Habilidades */
