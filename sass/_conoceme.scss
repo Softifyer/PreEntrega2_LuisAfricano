@@ -12,25 +12,25 @@
         color: #363940;
         padding: 3rem;
         height: 15rem;
-    } 
 
-    .descargaCV h2{
-        text-align: center;
-        font-size: 3rem;
-        padding: 2.5rem;
-        color: #363940;
-    }
+        h2{
+            text-align: center;
+            font-size: 3rem;
+            padding: 2.5rem;
+            color: #363940;
+        }
 
-    .descargaCV p{
-        text-align: center;
-        font-size: 1.8rem;
-    }
+        p{
+            text-align: center;
+            font-size: 1.8rem;
+        }
 
-    .descargaCV a{
-        color: #000000;
-        font-size: 2rem;
-        padding: 1rem 1rem 1rem 1rem;
-        text-align: center;
+        a{
+            color: #000000;
+            font-size: 2rem;
+            padding: 1rem 1rem 1rem 1rem;
+            text-align: center;
+        }
     }
 
     /* Fin CSS Descarga de CV */
@@ -54,20 +54,20 @@
         flex-wrap: wrap;
         justify-content: center;
         align-content: center;
-    }
 
-    .seccionConocemeTitulo h2 {
-        color: #363940;
-        text-transform: uppercase;
-        font-size: 3rem;
-        margin-top: 5rem;
-        font-weight: bold;
-    }
+        h2 {
+            color: #363940;
+            text-transform: uppercase;
+            font-size: 3rem;
+            margin-top: 5rem;
+            font-weight: bold;
+        }
 
-    .seccionConocemeTitulo p {
-        color: #505050;
-        font-size: 2rem;
-
+        p {
+            color: #505050;
+            font-size: 2rem;
+    
+        }
     }
 
     .divisor {
@@ -86,24 +86,24 @@
         height: 23rem;
     }
 
-    .descargaCv h3 {
-        display: block;
-        color: #363940;
-        text-transform: uppercase;
-        font-size: 3rem;
-        margin-top: 5rem;
-        font-weight: bold;
-        text-align: left;
-        height: 5rem;
-    }
-
     .descargaCv {
         width: 82rem;
-    }
 
-    .descargaCv p {
-        color: #363940;
-        font-size: 1.7rem;
+        h3 {
+            display: block;
+            color: #363940;
+            text-transform: uppercase;
+            font-size: 3rem;
+            margin-top: 5rem;
+            font-weight: bold;
+            text-align: left;
+            height: 5rem;
+        }
+
+        p {
+            color: #363940;
+            font-size: 1.7rem;
+        }
     }
 
     .botonDescarga {
@@ -154,24 +154,26 @@
         flex-wrap: wrap;
         margin-inline: 1rem;
         margin-top: 10px;
+        
     }
 
     .infoQuienSoy {
         display: flex;
         flex-direction: column;
-    }
 
-    .infoQuienSoy h4 {
-        display: flex;
-        font-size: 1.8rem;
-        font-weight: bolder;
-        margin-top: 1.5rem;
-        margin-bottom: 2rem;
-    }    
+        h4 {
+            display: flex;
+            font-size: 1.8rem;
+            font-weight: bolder;
+            margin-top: 1.5rem;
+            margin-bottom: 2rem;
+        }
 
-    .infoQuienSoy p {
-        font-size: 1.7rem;
-        text-align: left;
+        p {
+            font-size: 1.7rem;
+            text-align: left;
+        }
+
     }
 
     .cardQuienSoy {

@@ -15,19 +15,19 @@
         flex-wrap: wrap;
         justify-content: center;
         align-content: center;
-    }
 
-    .seccionContactoTitulo h2 {
-        color: #363940;
-        text-transform: uppercase;
-        font-size: 3rem;
-        margin-top: 5rem;
-        font-weight: bold;
-    }
+        h2 {
+            color: #363940;
+            text-transform: uppercase;
+            font-size: 3rem;
+            margin-top: 5rem;
+            font-weight: bold;
+        }
 
-    .seccionContactoTitulo p {
-        color: #505050;
-        font-size: 2rem;
+        p {
+            color: #505050;
+            font-size: 2rem;
+        }
     }
 
     /* Fin Contacto Título */
@@ -47,14 +47,16 @@
         flex-direction: column;
         width: 30%;
         margin-left: 5rem;
-    }
 
-    .infoGeneral span {
-        margin-top: 5rem;
-    }
+        span {
+            margin-top: 5rem;
+        }
 
-    .infoGeneral .text-center p{
-        margin-bottom: 6.5rem;
+        .text-center {
+            p{
+                margin-bottom: 6.5rem;
+            }
+        }
     }
 
     .infoGeneral h3, .formulario h3, .mapa h3, .redesSociales h3 {
@@ -130,8 +132,10 @@
         width: 40rem;
     }
 
-    form .formulario {
-        align-items: baseline;
+    form {
+        .formulario {
+            align-items: baseline;
+        }
     }
 
     label {

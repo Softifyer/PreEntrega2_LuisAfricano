@@ -40,35 +40,36 @@ p {
             background-attachment: fixed;
         }
 
-        
-
         .backgroundMain, .tituloMain {
             height: 82.3vh;
         }
 
-        .tituloMain h1 {
-            font-size: 5.5rem;
-            padding-bottom: 1rem;
-            text-transform: uppercase;
-        }
-        .tituloMain h2 {
-            font-size: 4rem;        
-            padding-bottom: 1rem;
-        }
-        .tituloMain p {
-            font-size: 2rem;
-            color: #ffffff;
-            text-align: center;
-            padding-bottom: 4rem;
-        }
-
         .tituloMain {
+
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-        }
 
+            h1 {
+                font-size: 5.5rem;
+                padding-bottom: 1rem;
+                text-transform: uppercase;
+            }
+
+            h2 {
+                font-size: 4rem;        
+                padding-bottom: 1rem;
+            }
+
+            p {
+                font-size: 2rem;
+                color: #ffffff;
+                text-align: center;
+                padding-bottom: 4rem;
+            }
+        }
+        
         .botonConoceme {
             display: flex;
             flex-direction: row;
@@ -85,12 +86,12 @@ p {
             touch-action: manipulation;
             cursor: pointer;
             color: #ffffff;
-        }
 
-        .conoceme:hover {
-            background-color: #ffffff;
-            color: #363940;
-        }
+            &:hover {
+                background-color: #ffffff;
+                color: #363940;
+            }
+        }        
 
         /* Fin CSS Main */
 

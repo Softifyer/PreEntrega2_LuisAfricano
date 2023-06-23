@@ -15,19 +15,19 @@
         flex-wrap: wrap;
         justify-content: center;
         align-content: center;
-    }
 
-    .seccionFilosofiaTitulo h2 {
-        color: #363940;
-        text-transform: uppercase;
-        font-size: 3rem;
-        margin-top: 5rem;
-        font-weight: bold;
-    }
+        h2 {
+            color: #363940;
+            text-transform: uppercase;
+            font-size: 3rem;
+            margin-top: 5rem;
+            font-weight: bold;
+        }
 
-    .seccionFilosofiaTitulo p {
-        color: #505050;
-        font-size: 2rem;
+        p {
+            color: #505050;
+            font-size: 2rem;
+        }
     }
 
     /* Fin Filosofía Título */
@@ -40,12 +40,11 @@
         flex-wrap: nowrap;
         max-width: 37rem;
         margin-inline: 1.5rem;
-    }
 
-    .cardDatosRelevantes h3 {
-        color: #363940;
+        h3 {
+            color: #363940;
+        }
     }
-
 
     .seccionDatosRelevantes {
         height: 51.3rem;
@@ -53,6 +52,12 @@
         margin-inline: auto;
         margin-bottom: 2rem;
         background-color: #f8f8f8;
+
+        p {
+            color: #505050;
+            font-size: 2rem;
+    
+        }
     }
 
     .seccionDatosRelevantesTitulo {
@@ -62,20 +67,14 @@
         justify-content: center;
         align-content: center;
         margin-bottom: 3rem;
-    }
 
-    .seccionDatosRelevantesTitulo h2 {
-        color: #363940;
-        text-transform: uppercase;
-        font-size: 3rem;
-        margin-top: 5rem;
-        font-weight: bold;
-    }
-
-    .seccionDatosRelevantes p {
-        color: #505050;
-        font-size: 2rem;
-
+        h2 {
+            color: #363940;
+            text-transform: uppercase;
+            font-size: 3rem;
+            margin-top: 5rem;
+            font-weight: bold;
+        }
     }
 
     /* Fin Sección Datos Relevantes */
@@ -85,21 +84,23 @@
     .counter {
         font-family: 'Roboto', sans-serif;
         font-size: 4em;
-    }
 
-    .counter:not(.is-visible) {
-        visibility: hidden;
+        &:not(.is-visible) {
+            visibility: hidden;
+        }
     }
 
     /* Fin Counter */
 
     /* Inicio Info Datos Relevantes */
 
-    .infoRelevante .row {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-bottom: 0.5rem;
+    .infoRelevante {
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 0.5rem;
+        }
     }
 
     /* Fin Info Datos Relevantes */

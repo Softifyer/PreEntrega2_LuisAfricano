@@ -6,15 +6,19 @@
     @media screen and (max-width: 479px) {
         
         /* Inicio index */
-        .footerStyle article p {
-            color: #ffffff;
-            display: flex;
-            font-size: 0.95rem;
-            width: 85vw;
-            justify-content: center;
-            margin-bottom: 0rem;
-            padding-left: 0;
-            margin-left: 0;
+        .footerStyle {
+            article {
+                p {
+                    color: #ffffff;
+                    display: flex;
+                    font-size: 0.95rem;
+                    width: 85vw;
+                    justify-content: center;
+                    margin-bottom: 0rem;
+                    padding-left: 0;
+                    margin-left: 0;
+                }
+            }
         }
 
         .copyright {
@@ -24,17 +28,19 @@
             align-self: center;
         }
 
-        .tituloMain h1 {            
-            font-size: 3rem;
-            padding-top: 3rem;
-        }
+        .tituloMain {
+            h1 {            
+                font-size: 3rem;
+                padding-top: 3rem;
+            }
 
-        .tituloMain h2 {            
-            font-size: 3rem;
-        }
+            h2 {            
+                font-size: 3rem;
+            }
 
-        .tituloMain p {            
-            font-size: 1.5rem;
+            p {            
+                font-size: 1.5rem;
+            }
         }
 
         .botonConoceme {
@@ -53,17 +59,19 @@
             height: 93rem;
         }
 
-        .seccionConocemeTitulo h2 {
-            color: #363940;
-            text-transform: uppercase;
-            font-size: 2.5rem;
-            margin-top: 3rem;
-            font-weight: bold;
-        }
+        .seccionConocemeTitulo {
+            h2 {
+                color: #363940;
+                text-transform: uppercase;
+                font-size: 2.5rem;
+                margin-top: 3rem;
+                font-weight: bold;
+            }
 
-        .seccionConocemeTitulo p {
-            color: #505050;
-            font-size: 1.5rem;
+            p {
+                color: #505050;
+                font-size: 1.5rem;
+            }
         }
 
         .seccionConoceme {
@@ -72,23 +80,23 @@
 
         .descargaCv {
             width: 100vw;
-        }
 
-        .descargaCv h3 {
-            display: block;
-            color: #363940;
-            text-transform: uppercase;
-            font-size: 2rem;
-            margin-top: 3rem;
-            font-weight: bold;
-            text-align: center;
-            height: 3rem;
-        }
+            h3 {
+                display: block;
+                color: #363940;
+                text-transform: uppercase;
+                font-size: 2rem;
+                margin-top: 3rem;
+                font-weight: bold;
+                text-align: center;
+                height: 3rem;
+            }
 
-        .descargaCv p {
-            text-align: center;
+            p {
+                text-align: center;
+            }
+    
         }
-
         .descarga {
             background-color: #f8f8f8;
             height: 32rem;
@@ -119,9 +127,13 @@
             text-align: center;
         }
 
-        .quienSoy .row .cardQuienSoy {
-            width: 100%;
-            padding-inline: 2rem;
+        .quienSoy {
+            .row {
+                .cardQuienSoy {
+                    width: 100%;
+                    padding-inline: 2rem;
+                }
+            }
         }
 
         .cardQuienSoy {
@@ -136,8 +148,10 @@
             padding-inline: 3rem;
         }
 
-        .habilidad h3 {
-            text-align: center;
+        .habilidad {
+            h3 {
+                text-align: center;
+            }
         }
 
         /* Fin Conoceme */
@@ -152,10 +166,10 @@
         flex-wrap: nowrap;
         max-width: 30rem;
         margin-inline: 3rem;
-    }
 
-    .cardTrayectoria h3 {
-        color: #363940;
+        h3 {
+            color: #363940;
+        }
     }
 
     .iconoTrayectoria {
@@ -163,11 +177,13 @@
         font-size: 5rem;
     }
 
-    .trayectoriaInfo .row {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-bottom: 3.2rem;
+    .trayectoriaInfo {
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 3.2rem;
+        }
     }
 
     .parrafoTrayectoria {
@@ -225,65 +241,46 @@
         height: 100%;
         top: 0;
         left: 0;
-      }
-      /*
-          This is the outer svg wrapper that the SVG itself will 
-          fill. Multiple svg-wrapper classes can be put side by side.
-      */
-      
-      .svg-wrapper {
+    }
+
+    .svg-wrapper {
         margin-top: 0;
         position: relative;
         width: 150px;
-        /*make sure to use same height/width as in the html*/
         height: 40px;
         display: inline-block;
         border-radius: 3px;
         margin-left: 5px;
-        margin-right: 5px
-      }
-      /*
-        This is where we define the fill, color, thickness,
-        and stroke pattern of the SVG when there is no hover.
-        The dasharray and offset together define the line position
-        under the words. Here's also where the transition speed is set.
-      */
-      
-      #shape {
+        margin-right: 5px;
+
+        &:hover #shape {
+            stroke-dasharray: 50 0;
+            stroke-width: 3px;
+            stroke-dashoffset: 0;
+            stroke: #000000;
+        }
+    }
+
+    #shape {
         stroke-width: 6px;
         fill: transparent;
         stroke: #58646b;
         stroke-dasharray: 85 400;
         stroke-dashoffset: -220;
         transition: 1s all ease;
-      }
-      /* 
-          Pushing the text up into the SVG. Without this the
-          text would be below the div's.
-      */
-      
-      #text {
+    }
+    
+    #text {
         margin-top: -35px;
         text-align: center;
-      }
-      
-      #text a {
-        color: white;
-        text-decoration: none;
-        font-weight: 100;
-        font-size: 1.1em;
-      }
-      /* 
-          Changing the shape on hover. I change the color of the stroke,
-      make it thinner, then set it to again wrap around the entire parent element.
-      */
-      
-      .svg-wrapper:hover #shape {
-        stroke-dasharray: 50 0;
-        stroke-width: 3px;
-        stroke-dashoffset: 0;
-        stroke: #000000;
-      }
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-weight: 100;
+            font-size: 1.1em;
+        }
+    }
 
     /* Fin Testimonios */
 
@@ -306,19 +303,19 @@
         flex-wrap: wrap;
         justify-content: center;
         align-content: center;
-    }
 
-    .seccionFilosofiaTitulo h2 {
-        color: #363940;
-        text-transform: uppercase;
-        font-size: 3rem;
-        margin-top: 5rem;
-        font-weight: bold;
-    }
+        h2 {
+            color: #363940;
+            text-transform: uppercase;
+            font-size: 3rem;
+            margin-top: 5rem;
+            font-weight: bold;
+        }
 
-    .seccionFilosofiaTitulo p {
-        color: #505050;
-        font-size: 1.8rem;
+        p {
+            color: #505050;
+            font-size: 1.8rem;
+        }
     }
 
     /* Fin Filosofía Título */
@@ -331,12 +328,11 @@
         flex-wrap: nowrap;
         max-width: 37rem;
         margin-inline: 1.5rem;
-    }
 
-    .cardDatosRelevantes h3 {
-        color: #363940;
+        h3 {
+            color: #363940;
+        }
     }
-
 
     .seccionDatosRelevantes {
         height: 132.3rem;
@@ -344,6 +340,11 @@
         margin-inline: auto;
         margin-bottom: 2rem;
         background-color: #f8f8f8;
+
+        p {
+            color: #505050;
+            font-size: 2rem;
+        }
     }
 
     .seccionDatosRelevantesTitulo {
@@ -353,20 +354,14 @@
         justify-content: center;
         align-content: center;
         margin-bottom: 3rem;
-    }
 
-    .seccionDatosRelevantesTitulo h2 {
-        color: #363940;
-        text-transform: uppercase;
-        font-size: 3rem;
-        margin-top: 5rem;
-        font-weight: bold;
-    }
-
-    .seccionDatosRelevantes p {
-        color: #505050;
-        font-size: 2rem;
-
+        h2 {
+            color: #363940;
+            text-transform: uppercase;
+            font-size: 3rem;
+            margin-top: 5rem;
+            font-weight: bold;
+        }
     }
 
     /* Fin Sección Datos Relevantes */
@@ -376,21 +371,25 @@
     .counter {
         font-family: 'Roboto', sans-serif;
         font-size: 4em;
+
+        &:not(.is-visible) {
+            visibility: hidden;
+        }
     }
 
-    .counter:not(.is-visible) {
-        visibility: hidden;
-    }
+    
 
     /* Fin Counter */
 
     /* Inicio Info Datos Relevantes */
 
-    .infoRelevante .row {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-bottom: 0.5rem;
+    .infoRelevante {
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 0.5rem;
+        }
     }
 
     /* Fin Info Datos Relevantes */
@@ -415,19 +414,19 @@
         flex-wrap: wrap;
         justify-content: center;
         align-content: center;
-    }
 
-    .seccionContactoTitulo h2 {
-        color: #363940;
-        text-transform: uppercase;
-        font-size: 3rem;
-        margin-top: 5rem;
-        font-weight: bold;
-    }
+        h2 {
+            color: #363940;
+            text-transform: uppercase;
+            font-size: 3rem;
+            margin-top: 5rem;
+            font-weight: bold;
+        }
 
-    .seccionContactoTitulo p {
-        color: #505050;
-        font-size: 2rem;
+        p {
+            color: #505050;
+            font-size: 2rem;
+        }
     }
 
     /* Fin Contacto Título */
@@ -435,7 +434,7 @@
     /* Inicio Info Contacto */
 
     .seccionInfoContacto {
-        height: 164rem;
+        height: 244rem;
         background-color: #f8f8f8;
         display: flex;
         flex-direction: column;
@@ -443,23 +442,25 @@
     }
 
     .infoGeneral {
-        display: block;
+        display: flex;
         flex-direction: column;
-        width: 50%;
-        margin-left: 5rem;
+        flex-wrap: nowrap;
+        width: 100%;
+
+        span {
+            margin-top: 5rem;
+        }
+
+        .text-center {
+            p{
+                margin-bottom: 6.5rem;
+            }
+        }
     }
 
     .infoContacto {
         display: block;
         flex-wrap: nowrap;
-    }
-
-    .infoGeneral span {
-        margin-top: 5rem;
-    }
-
-    .infoGeneral .text-center p{
-        margin-bottom: 6.5rem;
     }
 
     .infoGeneral h3, .formulario h3, .mapa h3, .redesSociales h3 {
@@ -497,14 +498,14 @@
     .formulario {
         display: block;
         flex-direction: column;
-        width: 33.3%;
+        width: 100%;
         align-items: center;
     }
 
     .formularioContacto {
         display: block;
         flex-direction: column;
-        width: 210%;
+        width: 100%;
         align-items: center;
         margin-top: 3rem;
     }
@@ -518,12 +519,13 @@
     .mapa {
         display: flex;
         flex-direction: column;
-        width: 33.3%;
+        width: 100%;
     }
 
     iframe {
         display: block;
         margin-top: 5rem;
+        max-width: 30rem;
     }
 
     .infoContacto {
@@ -532,16 +534,20 @@
         width: 100%;
     }
 
-    .infoContacto .row {
-        display: block;
+    .infoContacto {
+        .row {
+            display: block;
+        }
     }
 
     input, textarea {
         width: 35rem;
     }
 
-    form .formulario {
-        align-items: baseline;
+    form {
+        .formulario {
+            align-items: baseline;
+        }
     }
 
     label {
@@ -906,7 +912,7 @@
     /* De 1920px a  */
     @media (min-width: 1920px) and (max-width: 2559px) {
         .backgroundMain, .tituloMain {
-            height: 88.2vh;
+            height: 89.2vh;
         }
     }
 
