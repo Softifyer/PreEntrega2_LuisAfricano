@@ -181,7 +181,7 @@ h1, h2, h3 {
 
 .backgroundMain {
   background-image: url(../img/indexBackground.jpg);
-  background-size: cover;
+  background-size: auto;
   background-repeat: round;
   background-attachment: fixed;
 }
