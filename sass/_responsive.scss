@@ -48,10 +48,6 @@
             }
         }
 
-        body {
-            background-color: #363940;
-        }
-
         .botonConoceme {
             display: flex;
             padding-bottom: 2rem;
@@ -877,10 +873,6 @@
             justify-content: center;
         }
 
-        body {
-            background-color: #363940;
-        }
-
         /* Fin index */
 
         /* Inicio Conoceme */
@@ -1018,7 +1010,7 @@
     }
 
     /* De 1366px a 1599 */
-    @media (min-width: 1200px) and (max-width: 1359px) {
+    @media (min-width: 1200px) and (max-width: 1919px) {
         .backgroundMain, .tituloMain {
             height: 90vh;
         }
