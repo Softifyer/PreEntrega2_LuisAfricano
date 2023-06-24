@@ -923,6 +923,9 @@ label {
 /* De 0px a 479px */
 @media screen and (max-width: 479px) {
   /* Inicio index */
+  .backgroundMain, .tituloMain {
+    height: 90vh;
+  }
   .footerStyle article p {
     color: #ffffff;
     display: flex;
@@ -1367,6 +1370,9 @@ label {
 /* De 480px a 767px */
 @media screen and (min-width: 480px) and (max-width: 767px) {
   /* Inicio index */
+  .backgroundMain, .tituloMain {
+    height: 90vh;
+  }
   .footerStyle article p {
     color: #ffffff;
     display: flex;
@@ -1553,6 +1559,9 @@ label {
 /* De 768px a 1199px */
 @media (min-width: 768px) and (max-width: 1199px) {
   /* Inicio index */
+  .backgroundMain, .tituloMain {
+    height: 90vh;
+  }
   .footerStyle article p {
     color: #ffffff;
     display: flex;
@@ -1711,7 +1720,7 @@ label {
 /* De 1366px a 1599 */
 @media (min-width: 1200px) and (max-width: 1359px) {
   .backgroundMain, .tituloMain {
-    height: 82.3vh;
+    height: 90vh;
   }
   .seccionDatosRelevantes {
     height: 58.3rem;
@@ -1724,7 +1733,7 @@ label {
 /* De 1920px a  */
 @media (min-width: 1920px) and (max-width: 3750px) {
   .backgroundMain, .tituloMain {
-    height: 91.2vh;
+    height: 88.2vh;
   }
 }
 
