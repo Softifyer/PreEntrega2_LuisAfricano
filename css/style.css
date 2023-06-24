@@ -175,6 +175,10 @@ h1, h2, h3 {
   color: #ffffff;
 }
 
+.backindex {
+  background-color: #363940;
+}
+
 .backgroundMain {
   background-image: url(../img/indexBackground.jpg);
   background-size: cover;
@@ -924,7 +928,7 @@ label {
 @media screen and (max-width: 479px) {
   /* Inicio index */
   .backgroundMain, .tituloMain {
-    height: 83.6vh;
+    height: 90vh;
   }
   .footerStyle article p {
     color: #ffffff;
@@ -951,6 +955,9 @@ label {
   }
   .tituloMain p {
     font-size: 1.5rem;
+  }
+  body {
+    background-color: #363940;
   }
   .botonConoceme {
     display: flex;
@@ -1604,6 +1611,9 @@ label {
     display: flex;
     flex-direction: row;
     justify-content: center;
+  }
+  body {
+    background-color: #363940;
   }
   /* Fin index */
   /* Inicio Conoceme */
