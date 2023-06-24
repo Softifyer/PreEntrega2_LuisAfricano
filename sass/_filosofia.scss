@@ -3,7 +3,7 @@
     /* Inicio Filosofía Título */
 
     .seccionFilosofia {
-        height: 27rem;
+        height: 24rem;
         background-color: #ffffff;
         margin-inline: auto;
         margin-bottom: 2rem;
@@ -38,7 +38,7 @@
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
-        max-width: 37rem;
+        max-width: 28rem;
         margin-inline: 1.5rem;
 
         h3 {
@@ -47,10 +47,10 @@
     }
 
     .seccionDatosRelevantes {
-        height: 51.3rem;
+        height: 56.3rem;
         background-color: #ffffff;
         margin-inline: auto;
-        margin-bottom: 2rem;
+        margin-bottom: 0rem;
         background-color: #f8f8f8;
 
         p {
@@ -81,7 +81,7 @@
 
     /* Inicio Cunter */
 
-    .counter {
+    .counter, .counter2, .counter3, .counter4 {
         font-family: 'Roboto', sans-serif;
         font-size: 4em;
 

@@ -36,7 +36,7 @@ p {
         .backgroundMain {
             background-image: url(../img/indexBackground.jpg);
             background-size: cover;
-            background-repeat:no-repeat;
+            background-repeat: round;
             background-attachment: fixed;
         }
 
@@ -91,7 +91,47 @@ p {
                 background-color: #ffffff;
                 color: #363940;
             }
-        }        
+        }
+        
+        /*** ESTILOS BOTÓN GROW ELLIPSE ***/
+        .index-ov-btn-grow-ellipse {
+            background: #fff; /* color de fondo */
+            color: #363940; /* color de fuente */
+            border: 2px solid #505050; /* tamaño y color de borde */
+            padding: 14px 50px;
+            border-radius: 16px; /* redondear bordes */
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+            display: inline-block;
+            font-size: 1.5rem;
+            font-weight: bold;
+
+            &:hover {
+                color: #fff;/* color de fuente hover */
+            }
+
+            &::after {
+                content: "";
+                background: #424242; /* color de fondo hover */
+                position: absolute;
+                z-index: -1;
+                padding: 16px 20px;
+                display: block;
+                border-radius: 50%;
+                left: -50%;
+                right: -50%;
+                top: -150%;
+                bottom: -150%;
+                transform: scale(0, 0);
+                transition: all 0.3s ease;
+            }
+
+            &:hover::after {
+                transition: all 0.3s ease-out;
+                transform: scale(1, 1);
+            }
+        }
 
         /* Fin CSS Main */
 

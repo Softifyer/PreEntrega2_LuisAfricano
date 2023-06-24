@@ -5,7 +5,7 @@ const callback = entries => {
 		const el = entry.target
 		if ( entry.isIntersecting && ! el.classList.contains( 'is-visible' ) ) {
 			counterUp( el, {
-				duration: 2000,
+				duration: 4000,
 				delay: 10,
 			} )
 			el.classList.add( 'is-visible' )
@@ -15,5 +15,5 @@ const callback = entries => {
 
 const IO = new IntersectionObserver( callback, { threshold: 1 } )
 
-const el = document.querySelector( '.counter' )
+const el = document.querySelector( '.counter')
 IO.observe( el )

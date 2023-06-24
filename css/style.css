@@ -178,7 +178,7 @@ h1, h2, h3 {
 .backgroundMain {
   background-image: url(../img/indexBackground.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: round;
   background-attachment: fixed;
 }
 
@@ -228,6 +228,43 @@ h1, h2, h3 {
 .conoceme:hover {
   background-color: #ffffff;
   color: #363940;
+}
+
+/*** ESTILOS BOTÓN GROW ELLIPSE ***/
+.index-ov-btn-grow-ellipse {
+  background: #fff; /* color de fondo */
+  color: #363940; /* color de fuente */
+  border: 2px solid #505050; /* tamaño y color de borde */
+  padding: 14px 50px;
+  border-radius: 16px; /* redondear bordes */
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.index-ov-btn-grow-ellipse:hover {
+  color: #fff; /* color de fuente hover */
+}
+.index-ov-btn-grow-ellipse::after {
+  content: "";
+  background: #424242; /* color de fondo hover */
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  border-radius: 50%;
+  left: -50%;
+  right: -50%;
+  top: -150%;
+  bottom: -150%;
+  transform: scale(0, 0);
+  transition: all 0.3s ease;
+}
+.index-ov-btn-grow-ellipse:hover::after {
+  transition: all 0.3s ease-out;
+  transform: scale(1, 1);
 }
 
 /* Fin CSS Main */
@@ -594,7 +631,7 @@ h1, h2, h3 {
 /* Inicio Filosofía */
 /* Inicio Filosofía Título */
 .seccionFilosofia {
-  height: 27rem;
+  height: 24rem;
   background-color: #ffffff;
   margin-inline: auto;
   margin-bottom: 2rem;
@@ -625,7 +662,7 @@ h1, h2, h3 {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  max-width: 37rem;
+  max-width: 28rem;
   margin-inline: 1.5rem;
 }
 .cardDatosRelevantes h3 {
@@ -633,10 +670,10 @@ h1, h2, h3 {
 }
 
 .seccionDatosRelevantes {
-  height: 51.3rem;
+  height: 56.3rem;
   background-color: #ffffff;
   margin-inline: auto;
-  margin-bottom: 2rem;
+  margin-bottom: 0rem;
   background-color: #f8f8f8;
 }
 .seccionDatosRelevantes p {
@@ -662,11 +699,11 @@ h1, h2, h3 {
 
 /* Fin Sección Datos Relevantes */
 /* Inicio Cunter */
-.counter {
+.counter, .counter2, .counter3, .counter4 {
   font-family: "Roboto", sans-serif;
   font-size: 4em;
 }
-.counter:not(.is-visible) {
+.counter:not(.is-visible), .counter2:not(.is-visible), .counter3:not(.is-visible), .counter4:not(.is-visible) {
   visibility: hidden;
 }
 
@@ -712,7 +749,7 @@ h1, h2, h3 {
 /* Fin Contacto Título */
 /* Inicio Info Contacto */
 .seccionInfoContacto {
-  height: 72rem;
+  height: 76rem;
   background-color: #f8f8f8;
   display: flex;
   flex-direction: row;
@@ -724,6 +761,7 @@ h1, h2, h3 {
   flex-direction: column;
   width: 30%;
   margin-left: 5rem;
+  margin-block: 2rem;
 }
 .infoGeneral span {
   margin-top: 5rem;
@@ -768,6 +806,8 @@ h1, h2, h3 {
   flex-direction: column;
   width: 33.3%;
   align-items: center;
+  border-inline: 0.2rem solid #505050;
+  margin-block: 2rem;
 }
 
 .formularioContacto {
@@ -787,10 +827,15 @@ h1, h2, h3 {
   display: flex;
   flex-direction: column;
   width: 33.3%;
+  margin-block: 2rem;
 }
 
 iframe {
   margin-top: 5rem;
+  display: flex;
+}
+iframe .mapa {
+  border: 1rem solid #363940;
 }
 
 .infoContacto {
@@ -833,6 +878,41 @@ label {
 
 .botoneraRRSS {
   text-align: center;
+}
+
+.ov-btn-grow-ellipse {
+  background: #fff;
+  color: #363940;
+  border: 2px solid #505050;
+  padding: 6px 31px;
+  border-radius: 16px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+  margin-inline: 2rem;
+}
+.ov-btn-grow-ellipse:hover {
+  color: #fff;
+}
+.ov-btn-grow-ellipse::after {
+  content: "";
+  background: #363940;
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  border-radius: 50%;
+  left: -50%;
+  right: -50%;
+  top: -150%;
+  bottom: -150%;
+  transform: scale(0, 0);
+  transition: all 0.3s ease;
+}
+.ov-btn-grow-ellipse:hover::after {
+  transition: all 0.3s ease-out;
+  transform: scale(1, 1);
 }
 
 /* Fin Sección RRSS */
@@ -1180,34 +1260,27 @@ label {
   .infoGeneral {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
     width: 100%;
+    margin-left: 0rem;
+    margin-block: 2rem;
   }
   .infoGeneral span {
-    margin-top: 5rem;
+    margin-top: 1rem;
   }
   .infoGeneral .text-center p {
-    margin-bottom: 6.5rem;
-  }
-  .infoContacto {
-    display: block;
-    flex-wrap: nowrap;
+    margin-bottom: 2rem;
   }
   .infoGeneral h3, .formulario h3, .mapa h3, .redesSociales h3 {
     display: block;
     color: #363940;
     text-transform: uppercase;
     font-size: 2.3rem;
-    margin-top: 5rem;
+    margin-top: 4rem;
     font-weight: bold;
     text-align: center;
     height: 5rem;
   }
   /* Inicio CSS Formulario */
-  .formulario {
-    text-align: center;
-    font-size: 1.8rem;
-  }
   .botonFormulario {
     color: #363940;
     font-size: 1.5rem;
@@ -1217,8 +1290,9 @@ label {
     border-color: #a9a9a9;
   }
   .botonEnviar, .botonLimpiar {
-    width: 15rem;
-    margin-inline: 3rem;
+    width: 13rem;
+    margin-inline: 2rem;
+    border-radius: 10%;
   }
   .formulario {
     display: block;
@@ -1227,11 +1301,13 @@ label {
     align-items: center;
   }
   .formularioContacto {
-    display: block;
+    display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
     margin-top: 3rem;
+    flex-wrap: nowrap;
+    justify-content: center;
   }
   .textInfotmacion {
     height: 13.3rem;
@@ -1246,14 +1322,6 @@ label {
     display: block;
     margin-top: 5rem;
     max-width: 30rem;
-  }
-  .infoContacto {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-  }
-  .infoContacto .row {
-    display: block;
   }
   input, textarea {
     width: 35rem;
@@ -1283,6 +1351,14 @@ label {
   }
   .botoneraRRSS {
     text-align: center;
+  }
+  .infoContacto {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
   }
   /* Fin Sección RRSS */
   /* Fin Contacto */
@@ -1408,6 +1484,71 @@ label {
     text-align: center;
   }
   /* Fin Conoceme */
+  .carousel-indicators {
+    margin-bottom: 15rem;
+  }
+  .fa-chevron-left, .fa-chevron-right {
+    font-size: 3rem;
+    color: #363940;
+    margin-top: -11rem;
+  }
+  .corusel-inner {
+    width: 90%;
+  }
+  .testimonios {
+    background-color: #f8f8f8;
+    height: 34rem;
+  }
+  .seccionDatosRelevantes {
+    height: 158.3rem;
+    background-color: #ffffff;
+    margin-inline: auto;
+    margin-bottom: 0rem;
+    background-color: #f8f8f8;
+  }
+  .seccionDatosRelevantes p {
+    color: #505050;
+    font-size: 2rem;
+  }
+  .seccionFilosofia {
+    height: 38rem;
+    background-color: #ffffff;
+    margin-inline: auto;
+    margin-bottom: 2rem;
+  }
+  .seccionFilosofiaTitulo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+  }
+  .seccionFilosofiaTitulo h2 {
+    color: #363940;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-top: 5rem;
+    font-weight: bold;
+  }
+  .seccionFilosofiaTitulo p {
+    color: #505050;
+    font-size: 2rem;
+  }
+  .cardDatosRelevantes {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    max-width: 28rem;
+    margin-inline: 1.5rem;
+  }
+  .infoRelevante .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0.5rem;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
 }
 /* De 768px a 1199px */
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -1542,17 +1683,48 @@ label {
     text-align: center;
   }
   /* Fin Conoceme */
+  .seccionDatosRelevantes {
+    height: 90rem;
+    background-color: #ffffff;
+    margin-inline: auto;
+    margin-bottom: 0rem;
+    background-color: #f8f8f8;
+  }
+  .seccionDatosRelevantes p {
+    color: #505050;
+    font-size: 2rem;
+  }
+  .cardDatosRelevantes {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    max-width: 30rem;
+    margin-inline: 1.5rem;
+  }
+  .seccionFilosofia {
+    height: 30rem;
+    background-color: #ffffff;
+    margin-inline: auto;
+    margin-bottom: 2rem;
+  }
 }
 /* De 1366px a 1599 */
-@media (min-width: 1366px) and (max-width: 1919px) {
+@media (min-width: 1200px) and (max-width: 1359px) {
   .backgroundMain, .tituloMain {
     height: 82.3vh;
   }
+  .seccionDatosRelevantes {
+    height: 58.3rem;
+    background-color: #ffffff;
+    margin-inline: auto;
+    margin-bottom: 0rem;
+    background-color: #f8f8f8;
+  }
 }
 /* De 1920px a  */
-@media (min-width: 1920px) and (max-width: 2559px) {
+@media (min-width: 1920px) and (max-width: 3750px) {
   .backgroundMain, .tituloMain {
-    height: 89.2vh;
+    height: 91.2vh;
   }
 }
 
