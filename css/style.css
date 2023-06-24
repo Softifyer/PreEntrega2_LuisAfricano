@@ -924,7 +924,7 @@ label {
 @media screen and (max-width: 479px) {
   /* Inicio index */
   .backgroundMain, .tituloMain {
-    height: 90vh;
+    height: 83.6vh;
   }
   .footerStyle article p {
     color: #ffffff;
