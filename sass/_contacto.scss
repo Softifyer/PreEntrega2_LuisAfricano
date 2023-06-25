@@ -35,7 +35,7 @@
     /* Inicio Info Contacto */
 
     .seccionInfoContacto {
-        height: 76rem;
+        height: 85rem;
         background-color: #f8f8f8;
         display: flex;
         flex-direction: row;
@@ -120,10 +120,12 @@
         flex-direction: column;
         width: 33.3%;
         margin-block: 2rem;
+        align-items: center;
+        
     }
 
     iframe {
-        margin-top: 5rem;
+        margin-top: 1rem;
         display: flex;
 
         .mapa {
@@ -149,6 +151,18 @@
 
     label {
         align-items: baseline;
+    }
+
+    .datos {
+        a {
+            text-decoration: none;
+
+                &:link, &:visited {
+                    text-decoration: none;
+                    color: #505050;
+                    font-size: 2rem;
+                }
+        }
     }
 
     /* Fin Info Contacto */
@@ -215,7 +229,96 @@
         }
     }
 
-    
+    .social-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        margin-block: 1.5rem;
+        }
+        
+        $social-button-size: 64px;
+        $social-button-icon-size: 0.4;
+        $social-button-background: #fff;
+        $social-button-active-color: #fff;
+        $social-button-transition-time: 0.3s;
+        
+        $social-button-colors: (
+        'mail': #0072c6,
+        'facebook': #505050,
+        'linkedin': #505050,
+        'github': #505050,
+        'codepen': #505050,
+        'steam': #7da10e,
+        'snapchat': #505050,
+        'twitter': #505050,
+        'instagram': #e4405f,
+        'npmjs': #c12127,
+        );
+        
+        .social-button {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        outline: none;
+        width: $social-button-size;
+        height: $social-button-size;
+        text-decoration: none;
+        border-radius: 10%;
+        background: $social-button-background;
+        text-align: center;
+        
+        &::after {
+            content: '';
+            position: absolute;
+            top: -1px;
+            left: 50%;
+            display: block;
+            width: 0;
+            height: 0;
+            border-radius: 10%;
+            transition: $social-button-transition-time;
+        }
+        
+        &:focus,
+        &:hover {
+            color: $social-button-active-color;
+        
+            &::after {
+            width: calc(100% + 2px);
+            height: calc(100% + 2px);
+            margin-left: calc(-50% - 1px);
+            }
+        }
+        
+        i,
+        svg {
+            position: relative;
+            z-index: 1;
+            transition: $social-button-transition-time;
+        }
+        
+        i {
+            font-size: $social-button-size * $social-button-icon-size;
+        }
+        
+        svg {
+            height: percentage($social-button-icon-size);
+            width: percentage($social-button-icon-size);
+        }
+        
+        @each $name, $color in $social-button-colors {
+            &--#{$name} {
+            color: $color;
+        
+            &::after {
+                background: $color;
+            }
+            }
+        }
+        }
+        
 
     /* Fin Sección RRSS */
 

@@ -17,7 +17,7 @@
                     color: #ffffff;
                     display: flex;
                     font-size: 0.95rem;
-                    width: 85vw;
+                    width: 90vw;
                     justify-content: center;
                     margin-bottom: 0rem;
                     padding-left: 0;
@@ -61,7 +61,7 @@
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
-            height: 93rem;
+            height: 131rem;
         }
 
         .seccionConocemeTitulo {
@@ -136,18 +136,34 @@
             .row {
                 .cardQuienSoy {
                     width: 100%;
-                    padding-inline: 2rem;
+                    display: flex;
+                    padding-inline: 0px;
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                    align-items: center;
                 }
             }
         }
 
+        .card1 {
+            display: block;
+            position: relative;
+            max-width: 262px;
+            border-radius: 4px;
+            padding: 32px 24px;
+            margin: 12px;
+            text-decoration: none;
+            z-index: 0;
+            overflow: hidden;
+        }
+
         .cardQuienSoy {
             margin-top: 2.5rem;
-            height: 20rem;
+            height: 29rem;
         }
 
         .habilidades {
-            height: 39rem;
+            height: 43rem;
             background-color: #f8f8f8;
             padding-top: 3.5rem;
             padding-inline: 3rem;
@@ -437,7 +453,7 @@
         /* Inicio Info Contacto */
 
         .seccionInfoContacto {
-            height: 244rem;
+            height: 226rem;
             background-color: #f8f8f8;
             display: flex;
             flex-direction: column;
@@ -495,6 +511,9 @@
             flex-direction: column;
             width: 100%;
             align-items: center;
+            border-inline: none;
+            border-block: 0.2rem solid #505050;
+            padding-bottom: 5rem;
         }
 
         .formularioContacto {
@@ -517,12 +536,37 @@
             display: flex;
             flex-direction: column;
             width: 100%;
+            margin-block: 0rem;
+            align-items: center;
         }
 
         iframe {
             display: block;
-            margin-top: 5rem;
-            max-width: 30rem;
+            margin-top: 1rem;
+            max-width: 35rem;
+        }
+
+        .datos {
+            width: 100%;
+
+            h4 {
+                text-align: left;
+                font-size: 2rem;
+            }
+
+            p {
+                text-align: left;
+            }
+
+            a {
+                text-decoration: none;
+
+                &:link, &:visited {
+                    text-decoration: none;
+                    color: #363940;
+                    font-size: 2rem;
+                }
+            }
         }
 
         input, textarea {
@@ -548,21 +592,39 @@
             background-color: #ffffff;
         }
 
-        .redesSociales p {
-            color: #505050;
-            font-size: 2rem;
-            text-align: center;
-            margin-top: 4rem;
+        .redesSociales {
+            p {
+                color: #505050;
+                font-size: 2rem;
+                text-align: center;
+                margin-top: 4rem;
+            }
         }
 
         .botonesRRSS {
             color: #363940;
-            margin-block: 5rem;
             font-size: 3.5rem;
+            margin: 0rem;
+            padding: 2rem;
         }
 
         .botoneraRRSS {
             text-align: center;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+
+            .row {
+                display: inline;
+                
+                div {
+                    a {
+                        margin: 0rem;
+                    }
+                }
+            }
         }
 
         .infoContacto {
@@ -590,15 +652,19 @@
             height: 90vh;
         }
 
-        .footerStyle article p {
-            color: #ffffff;
-            display: flex;
-            font-size: 0.95rem;
-            width: 85vw;
-            justify-content: center;
-            margin-bottom: 0rem;
-            padding-left: 0;
-            margin-left: 0;
+        .footerStyle {
+            article {
+                p {
+                    color: #ffffff;
+                    display: flex;
+                    font-size: 0.95rem;
+                    width: 85vw;
+                    justify-content: center;
+                    margin-bottom: 0rem;
+                    padding-left: 0;
+                    margin-left: 0;
+                }
+            }
         }
 
         .copyright {
@@ -608,17 +674,19 @@
             align-self: center;
         }
 
-        .tituloMain h1 {            
-            font-size: 3rem;
-            padding-top: 3rem;
-        }
+        .tituloMain {
+            h1 {            
+                font-size: 3rem;
+                padding-top: 3rem;
+            }
 
-        .tituloMain h2 {            
-            font-size: 3rem;
-        }
+            h2 {            
+                font-size: 3rem;
+            }
 
-        .tituloMain p {            
-            font-size: 1.5rem;
+            p {            
+                font-size: 1.5rem;
+            }
         }
 
         .botonConoceme {
@@ -634,20 +702,22 @@
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
-            height: 69rem;
+            height: 62rem;
         }
 
-        .seccionConocemeTitulo h2 {
-            color: #363940;
-            text-transform: uppercase;
-            font-size: 2.5rem;
-            margin-top: 3rem;
-            font-weight: bold;
-        }
+        .seccionConocemeTitulo {
+            h2 {
+                color: #363940;
+                text-transform: uppercase;
+                font-size: 2.5rem;
+                margin-top: 3rem;
+                font-weight: bold;
+            }
 
-        .seccionConocemeTitulo p {
-            color: #505050;
-            font-size: 1.5rem;
+            p {
+                color: #505050;
+                font-size: 1.5rem;
+            }
         }
 
         .seccionConoceme {
@@ -661,21 +731,21 @@
 
         .descargaCv {
             width: 100vw;
-        }
 
-        .descargaCv h3 {
-            display: block;
-            color: #363940;
-            text-transform: uppercase;
-            font-size: 2rem;
-            margin-top: 3rem;
-            font-weight: bold;
-            text-align: center;
-            height: 3rem;
-        }
+            h3 {
+                display: block;
+                color: #363940;
+                text-transform: uppercase;
+                font-size: 2rem;
+                margin-top: 3rem;
+                font-weight: bold;
+                text-align: center;
+                height: 3rem;
+            }
 
-        .descargaCv p {
-            text-align: center;
+            p {
+                text-align: center;
+            }
         }
 
         .descarga {
@@ -708,9 +778,17 @@
             text-align: center;
         }
 
-        .quienSoy .row .cardQuienSoy {
-            width: 100%;
-            padding-inline: 2rem;
+        .quienSoy {
+            .row {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                .cardQuienSoy {
+                    width: 50%;
+                    padding-inline: 1rem;
+                    height: 28rem;
+                }
+            }
         }
 
         .cardQuienSoy {
@@ -719,14 +797,28 @@
         }
 
         .habilidades {
-            height: 39rem;
+            height: 42rem;
             background-color: #f8f8f8;
             padding-top: 3.5rem;
             padding-inline: 3rem;
         }
 
-        .habilidad h3 {
-            text-align: center;
+        .habilidad {
+            h3 {
+                text-align: center;
+            }
+        }
+
+        .card1 {
+            display: block;
+            position: relative;
+            max-width: 262px;
+            border-radius: 4px;
+            padding: 32px 24px;
+            margin: 12px;
+            text-decoration: none;
+            z-index: 0;
+            overflow: hidden;
         }
 
         /* Fin Conoceme */
@@ -811,10 +903,232 @@
                 align-items: center;
             }
         }
+
+        /* Inicio Contacto */
+
+        /* Inicio Contacto Título */
+
+        .seccionContacto {
+            height: 20rem;
+            background-color: #ffffff;
+            margin-inline: auto;
+            margin-bottom: 2rem;
+        }
+
+        .seccionContactoTitulo {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+
+            h2 {
+                color: #363940;
+                text-transform: uppercase;
+                font-size: 3rem;
+                margin-top: 5rem;
+                font-weight: bold;
+            }
+
+            p {
+                color: #505050;
+                font-size: 2rem;
+            }
+        }
+
+        /* Fin Contacto Título */
+
+        /* Inicio Info Contacto */
+
+        .seccionInfoContacto {
+            height: 207rem;
+            background-color: #f8f8f8;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        .infoGeneral {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-left: 0rem;
+            margin-block: 2rem;
+
+            span {
+                margin-top: 1rem;
+            }
+
+            .text-center {
+                p{
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+
+        .infoGeneral h3, .formulario h3, .mapa h3, .redesSociales h3 {
+            display: block;
+            color: #363940;
+            text-transform: uppercase;
+            font-size: 2.3rem;
+            margin-top: 4rem;
+            font-weight: bold;
+            text-align: center;
+            height: 5rem;
+        }
+
+        /* Inicio CSS Formulario */
+
+        .botonFormulario {
+            color: #363940;
+            font-size: 1.5rem;
+            padding: 0.5rem;
+            text-align: center;
+            background: none;
+            border-color: #a9a9a9;
+        }
+
+        .botonEnviar, .botonLimpiar {
+            width: 13rem;
+            margin-inline: 2rem;
+            border-radius: 10%;
+        }
+
+        .formulario {
+            display: block;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            border-inline: none;
+            border-block: 0.2rem solid #505050;
+            padding-bottom: 5rem;
+        }
+
+        .formularioContacto {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            margin-top: 3rem;
+            flex-wrap: nowrap;
+            justify-content: center;
+        }
+
+        .textInfotmacion {
+            height: 13.3rem;
+        }
+
+        /* Fin CSS Formulario */
+
+        .mapa {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-block: 0rem;
+            align-items: center;
+        }
+
+        iframe {
+            display: block;
+            margin-top: 1rem;
+            max-width: 35rem;
+        }
+
+        .datos {
+            width: 100%;
+
+            h4 {
+                text-align: left;
+                font-size: 2rem;
+            }
+
+            p {
+                text-align: left;
+            }
+
+            a {
+                text-decoration: none;
+
+                &:link, &:visited {
+                    text-decoration: none;
+                    color: #363940;
+                    font-size: 2rem;
+                }
+            }
+        }
+
+        input, textarea {
+            width: 35rem;
+        }
+
+        form {
+            .formulario {
+                align-items: baseline;
+            }
+        }
+
+        label {
+            align-items: baseline;
+        }
+
+        /* Fin Info Contacto */
+
+        /* Inicio Sección RRSS */
+
+        .seccionRRSS {
+            height: 30rem;
+            background-color: #ffffff;
+        }
+
+        .redesSociales {
+            p {
+                color: #505050;
+                font-size: 2rem;
+                text-align: center;
+                margin-top: 4rem;
+            }
+        }
+
+        .botonesRRSS {
+            color: #363940;
+            font-size: 3.5rem;
+            margin: 0rem;
+            padding: 2rem;
+        }
+
+        .botoneraRRSS {
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+
+            .row {
+                display: inline;
+                
+                div {
+                    a {
+                        margin: 0rem;
+                    }
+                }
+            }
+        }
+
+        .infoContacto {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+    /* Fin Sección RRSS */
     }
 
     /* De 768px a 1199px */
-    @media (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
 
         /* Inicio index */
 
@@ -822,15 +1136,19 @@
             height: 90vh;
         }
 
-        .footerStyle article p {
-            color: #ffffff;
-            display: flex;
-            font-size: 1.3rem;
-            width: 85vw;
-            justify-content: center;
-            margin-bottom: 0rem;
-            padding-left: 0;
-            margin-left: 0;
+        .footerStyle {
+            article {
+                p {
+                    color: #ffffff;
+                    display: flex;
+                    font-size: 1.3rem;
+                    width: 85vw;
+                    justify-content: center;
+                    margin-bottom: 0rem;
+                    padding-left: 0;
+                    margin-left: 0;
+                }
+            }
         }
 
         .copyright {
@@ -840,17 +1158,19 @@
             align-self: center;
         }
 
-        .tituloMain h1 {            
-            font-size: 4rem;
-            padding-top: 2rem;
-        }
+        .tituloMain {
+            h1 {            
+                font-size: 4rem;
+                padding-top: 2rem;
+            }
 
-        .tituloMain h2 {            
-            font-size: 4rem;
-        }
+            h2 {            
+                font-size: 4rem;
+            }
 
-        .tituloMain p {            
-            font-size: 2rem;
+            p {            
+                font-size: 2rem;
+            }
         }
 
         .botonConoceme {
@@ -866,11 +1186,13 @@
             align-items: center;
         }
 
-        .footerStyle .row {
-            max-height: 6rem;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
+        .footerStyle {
+            .row {
+                max-height: 6rem;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
         }
 
         /* Fin index */
@@ -884,17 +1206,19 @@
             height: 55rem;
         }
 
-        .seccionConocemeTitulo h2 {
-            color: #363940;
-            text-transform: uppercase;
-            font-size: 3rem;
-            margin-top: 3.5rem;
-            font-weight: bold;
-        }
+        .seccionConocemeTitulo {
+            h2 {
+                color: #363940;
+                text-transform: uppercase;
+                font-size: 3rem;
+                margin-top: 3.5rem;
+                font-weight: bold;
+            }
 
-        .seccionConocemeTitulo p {
-            color: #505050;
-            font-size: 2rem;
+            p {
+                color: #505050;
+                font-size: 2rem;
+            }
         }
 
         .seccionConoceme {
@@ -903,21 +1227,21 @@
 
         .descargaCv {
             width: 100vw;
-        }
 
-        .descargaCv h3 {
-            display: block;
-            color: #363940;
-            text-transform: uppercase;
-            font-size: 2.5rem;
-            margin-top: 3.5rem;
-            font-weight: bold;
-            text-align: center;
-            height: 3.5rem;
-        }
+            h3 {
+                display: block;
+                color: #363940;
+                text-transform: uppercase;
+                font-size: 2.5rem;
+                margin-top: 3.5rem;
+                font-weight: bold;
+                text-align: center;
+                height: 3.5rem;
+            }
 
-        .descargaCv p {
-            text-align: center;
+            p {
+                text-align: center;
+            }
         }
 
         .descarga {
@@ -950,14 +1274,20 @@
             text-align: center;
         }
 
-        .quienSoy .row .cardQuienSoy {
-            width: 100%;
-            padding-inline: 1rem;
-            height: 10rem;
+        .quienSoy {
+            .row {
+                .cardQuienSoy {
+                    width: 50%;
+                    padding-inline: 1rem;
+                    height: 28rem;
+                }
+            }
         }
 
-        .quienSoy .container {
-            max-width: 70rem;
+        .quienSoy {
+            .container {
+                max-width: 70rem;
+            }
         }
 
         .cardQuienSoy {
@@ -966,14 +1296,28 @@
         }
 
         .habilidades {
-            height: 25rem;
+            height: 27rem;
             background-color: #f8f8f8;
             padding-top: 3.5rem;
             padding-inline: 3rem;
         }
 
-        .habilidad h3 {
-            text-align: center;
+        .habilidad {
+            h3 {
+                text-align: center;
+            }
+        }
+
+        .card1 {
+            display: block;
+            position: relative;
+            max-width: 310px;
+            border-radius: 4px;
+            padding: 32px 24px;
+            margin: 12px;
+            text-decoration: none;
+            z-index: 0;
+            overflow: hidden;
         }
 
         /* Fin Conoceme */
@@ -1006,13 +1350,235 @@
             margin-inline: auto;
             margin-bottom: 2rem;
         }
+
+        /* Inicio Contacto */
+
+        /* Inicio Contacto Título */
+
+        .seccionContacto {
+            height: 20rem;
+            background-color: #ffffff;
+            margin-inline: auto;
+            margin-bottom: 2rem;
+        }
+
+        .seccionContactoTitulo {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+
+            h2 {
+                color: #363940;
+                text-transform: uppercase;
+                font-size: 3rem;
+                margin-top: 5rem;
+                font-weight: bold;
+            }
+
+            p {
+                color: #505050;
+                font-size: 2rem;
+            }
+        }
+
+        /* Fin Contacto Título */
+
+        /* Inicio Info Contacto */
+
+        .seccionInfoContacto {
+            height: 236rem;
+            background-color: #f8f8f8;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        .infoGeneral {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-left: 0rem;
+            margin-block: 2rem;
+
+            span {
+                margin-top: 1rem;
+            }
+
+            .text-center {
+                p{
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+
+        .infoGeneral h3, .formulario h3, .mapa h3, .redesSociales h3 {
+            display: block;
+            color: #363940;
+            text-transform: uppercase;
+            font-size: 2.3rem;
+            margin-top: 4rem;
+            font-weight: bold;
+            text-align: center;
+            height: 5rem;
+        }
+
+        /* Inicio CSS Formulario */
+
+        .botonFormulario {
+            color: #363940;
+            font-size: 1.5rem;
+            padding: 0.5rem;
+            text-align: center;
+            background: none;
+            border-color: #a9a9a9;
+        }
+
+        .botonEnviar, .botonLimpiar {
+            width: 13rem;
+            margin-inline: 2rem;
+            border-radius: 10%;
+        }
+
+        .formulario {
+            display: block;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            border-inline: none;
+            border-block: 0.2rem solid #505050;
+            padding-bottom: 5rem;
+        }
+
+        .formularioContacto {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            margin-top: 3rem;
+            flex-wrap: nowrap;
+            justify-content: center;
+        }
+
+        .textInfotmacion {
+            height: 13.3rem;
+        }
+
+        /* Fin CSS Formulario */
+
+        .mapa {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-block: 0rem;
+            align-items: center;
+        }
+
+        iframe {
+            display: block;
+            margin-top: 1rem;
+            max-width: 35rem;
+        }
+
+        .datos {
+            width: 100%;
+
+            h4 {
+                text-align: left;
+                font-size: 2rem;
+            }
+
+            p {
+                text-align: left;
+            }
+
+            a {
+                text-decoration: none;
+
+                &:link, &:visited {
+                    text-decoration: none;
+                    color: #363940;
+                    font-size: 2rem;
+                }
+            }
+        }
+
+        input, textarea {
+            width: 35rem;
+        }
+
+        form {
+            .formulario {
+                align-items: baseline;
+            }
+        }
+
+        label {
+            align-items: baseline;
+        }
+
+        /* Fin Info Contacto */
+
+        /* Inicio Sección RRSS */
+
+        .seccionRRSS {
+            height: 30rem;
+            background-color: #ffffff;
+        }
+
+        .redesSociales {
+            p {
+                color: #505050;
+                font-size: 2rem;
+                text-align: center;
+                margin-top: 4rem;
+            }
+        }
+
+        .botonesRRSS {
+            color: #363940;
+            font-size: 3.5rem;
+            margin: 0rem;
+            padding: 2rem;
+        }
+
+        .botoneraRRSS {
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+
+            .row {
+                display: inline;
+                
+                div {
+                    a {
+                        margin: 0rem;
+                    }
+                }
+            }
+        }
+
+        .infoContacto {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+    /* Fin Sección RRSS */
     
     }
 
     /* De 1366px a 1599 */
-    @media (min-width: 1200px) and (max-width: 1919px) {
+    @media screen and (min-width: 1200px) and (max-width: 1919px) {
         .backgroundMain, .tituloMain {
-            height: 90vh;
+            height: 82.3vh;
         }
 
         .seccionDatosRelevantes {
@@ -1022,10 +1588,14 @@
             margin-bottom: 0rem;
             background-color: #f8f8f8;
         }
+
+        iframe {
+            width: 38rem;
+        }
     }
     
     /* De 1920px a  */
-    @media (min-width: 1920px) and (max-width: 3750px) {
+    @media screen and (min-width: 1920px) and (max-width: 3750px) {
         .backgroundMain, .tituloMain {
             height: 88.2vh;
         }
