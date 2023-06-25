@@ -18,7 +18,6 @@ nav {
   text-transform: uppercase;
   margin-left: 1rem;
 }
-
 .navbar-text:hover {
   color: #ffffff;
 }
@@ -41,18 +40,15 @@ nav {
   background-color: #363940;
   width: 100%;
 }
-
+.liContainer li {
+  padding-right: 2.5rem;
+}
 .liContainer li a {
   text-decoration: none;
   color: #a9a9a9;
   font-size: 1.5rem;
   text-transform: uppercase;
 }
-
-.liContainer li {
-  padding-right: 2.5rem;
-}
-
 .liContainer li a:hover {
   color: #ffffff;
 }
@@ -69,7 +65,6 @@ nav {
   padding: 0rem;
   display: flex;
 }
-
 .logo .navbar-text {
   align-items: center;
 }
@@ -234,13 +229,12 @@ h1, h2, h3 {
   color: #363940;
 }
 
-/*** ESTILOS BOTÓN GROW ELLIPSE ***/
 .index-ov-btn-grow-ellipse {
-  background: #fff; /* color de fondo */
-  color: #363940; /* color de fuente */
-  border: 2px solid #505050; /* tamaño y color de borde */
+  background: #fff;
+  color: #363940;
+  border: 2px solid #505050;
   padding: 14px 50px;
-  border-radius: 16px; /* redondear bordes */
+  border-radius: 16px;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -249,11 +243,11 @@ h1, h2, h3 {
   font-weight: bold;
 }
 .index-ov-btn-grow-ellipse:hover {
-  color: #fff; /* color de fuente hover */
+  color: #fff;
 }
 .index-ov-btn-grow-ellipse::after {
   content: "";
-  background: #424242; /* color de fondo hover */
+  background: #424242;
   position: absolute;
   z-index: -1;
   padding: 16px 20px;
@@ -438,27 +432,6 @@ h1, h2, h3 {
   width: 27.4rem;
 }
 
-.pulse:hover, .pulse:focus {
-  -webkit-animation: pulse 1s;
-  animation: pulse 1s;
-  box-shadow: 0 0 0 2rem rgba(255, 255, 255, 0);
-}
-
-@-webkit-keyframes pulse {
-  0% {
-    box-shadow: 0 0 0 0 var(--hover);
-  }
-}
-@keyframes pulse {
-  0% {
-    box-shadow: 0 0 0 0 var(--hover);
-  }
-}
-.pulse {
-  --color: #ffffff;
-  --hover: #333333;
-}
-
 /* Fin QuienSoy */
 /* Inicio Habilidades */
 .habilidades {
@@ -516,23 +489,20 @@ h1, h2, h3 {
 }
 
 /* Fin Barra de Progreso */
-/*** ESTILOS BOTÓN GROW SKEW ***/
 .ov-btn-grow-skew {
-  background: #505050; /* color de fondo */
-  color: #fff; /* color de fuente */
-  border: 2px solid #505050; /* tamaño y color de borde */
+  background: #505050;
+  color: #fff;
+  border: 2px solid #505050;
   padding: 16px 20px;
-  border-radius: 3px; /* redondear bordes */
+  border-radius: 3px;
   position: relative;
   z-index: 1;
   overflow: hidden;
   display: inline-block;
 }
-
 .ov-btn-grow-skew:hover {
   color: #505050; /* color de fuente hover */
 }
-
 .ov-btn-grow-skew::after {
   content: "";
   background: #fff; /* color de fondo hover */
@@ -547,13 +517,11 @@ h1, h2, h3 {
   transform: skewX(-45deg) scale(0, 1);
   transition: all 0.3s ease;
 }
-
 .ov-btn-grow-skew:hover::after {
   transition: all 0.3s ease-out;
   transform: skewX(-45deg) scale(1, 1);
 }
 
-/* Tarjetas Quien Soy */
 .go-corner {
   display: flex;
   align-items: center;
@@ -619,7 +587,6 @@ h1, h2, h3 {
 .card1:hover:before {
   transform: scale(21);
 }
-
 .card1:hover p {
   transition: all 0.3s ease-out;
   color: rgba(255, 255, 255, 0.8);
@@ -1176,8 +1143,7 @@ label {
   height: calc(100% + 2px);
   margin-left: calc(-50% - 1px);
 }
-.social-button i,
-.social-button svg {
+.social-button i, .social-button svg {
   position: relative;
   z-index: 1;
   transition: 0.3s;
@@ -1253,8 +1219,8 @@ label {
 /* Fin Sección RRSS */
 /* Fin Contacto */
 /* ============================= */
-/* ============================= */
 /* Media Queries */
+/* ============================= */
 /* De 0px a 479px */
 @media screen and (max-width: 479px) {
   /* Inicio index */
@@ -1604,7 +1570,7 @@ label {
   /* Fin Contacto Título */
   /* Inicio Info Contacto */
   .seccionInfoContacto {
-    height: 226rem;
+    height: 233rem;
     background-color: #f8f8f8;
     display: flex;
     flex-direction: column;
@@ -1750,8 +1716,8 @@ label {
   }
   /* Fin Sección RRSS */
   /* Fin Contacto */
-  /* ============================= */
 }
+/* ============================= */
 /* De 480px a 767px */
 @media screen and (min-width: 480px) and (max-width: 767px) {
   /* Inicio index */
@@ -2132,6 +2098,7 @@ label {
   }
   /* Fin Sección RRSS */
 }
+/* ============================= */
 /* De 768px a 1199px */
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   /* Inicio index */
@@ -2478,6 +2445,7 @@ label {
   }
   /* Fin Sección RRSS */
 }
+/* ============================= */
 /* De 1366px a 1599 */
 @media screen and (min-width: 1200px) and (max-width: 1919px) {
   .backgroundMain, .tituloMain {
@@ -2494,6 +2462,7 @@ label {
     width: 38rem;
   }
 }
+/* ============================= */
 /* De 1920px a  */
 @media screen and (min-width: 1920px) and (max-width: 3750px) {
   .backgroundMain, .tituloMain {

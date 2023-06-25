@@ -174,11 +174,13 @@
         background-color: #ffffff;
     }
 
-    .redesSociales p {
-        color: #505050;
-        font-size: 2rem;
-        text-align: center;
-        margin-top: 4rem;
+    .redesSociales {
+        p {
+            color: #505050;
+            font-size: 2rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
     }
 
     .botonesRRSS {
@@ -235,28 +237,28 @@
         justify-content: center;
         gap: 8px;
         margin-block: 1.5rem;
-        }
+    }
         
-        $social-button-size: 64px;
-        $social-button-icon-size: 0.4;
-        $social-button-background: #fff;
-        $social-button-active-color: #fff;
-        $social-button-transition-time: 0.3s;
+    $social-button-size: 64px;
+    $social-button-icon-size: 0.4;
+    $social-button-background: #fff;
+    $social-button-active-color: #fff;
+    $social-button-transition-time: 0.3s;
+    
+    $social-button-colors: (
+    'mail': #0072c6,
+    'facebook': #505050,
+    'linkedin': #505050,
+    'github': #505050,
+    'codepen': #505050,
+    'steam': #7da10e,
+    'snapchat': #505050,
+    'twitter': #505050,
+    'instagram': #e4405f,
+    'npmjs': #c12127,
+    );
         
-        $social-button-colors: (
-        'mail': #0072c6,
-        'facebook': #505050,
-        'linkedin': #505050,
-        'github': #505050,
-        'codepen': #505050,
-        'steam': #7da10e,
-        'snapchat': #505050,
-        'twitter': #505050,
-        'instagram': #e4405f,
-        'npmjs': #c12127,
-        );
-        
-        .social-button {
+    .social-button {
         position: relative;
         display: flex;
         justify-content: center;
@@ -292,8 +294,7 @@
             }
         }
         
-        i,
-        svg {
+        i, svg {
             position: relative;
             z-index: 1;
             transition: $social-button-transition-time;
@@ -312,13 +313,12 @@
             &--#{$name} {
             color: $color;
         
-            &::after {
-                background: $color;
-            }
+                &::after {
+                    background: $color;
+                }
             }
         }
-        }
-        
+    }        
 
     /* Fin Sección RRSS */
 

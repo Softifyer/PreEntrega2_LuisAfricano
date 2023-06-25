@@ -1,6 +1,6 @@
-/* ============================= */
+/* Media Queries */
 
-    /* Media Queries */
+/* ============================= */
 
     /* De 0px a 479px */
     @media screen and (max-width: 479px) {
@@ -102,6 +102,7 @@
             }
     
         }
+
         .descarga {
             background-color: #f8f8f8;
             height: 32rem;
@@ -453,7 +454,7 @@
         /* Inicio Info Contacto */
 
         .seccionInfoContacto {
-            height: 226rem;
+            height: 233rem;
             background-color: #f8f8f8;
             display: flex;
             flex-direction: column;
@@ -636,13 +637,13 @@
             align-items: center;
         }
 
-    /* Fin Sección RRSS */
+        /* Fin Sección RRSS */
 
-/* Fin Contacto */
-
-/* ============================= */
+        /* Fin Contacto */
 
     }
+
+/* ============================= */
     
     /* De 480px a 767px */
     @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -1127,6 +1128,8 @@
     /* Fin Sección RRSS */
     }
 
+/* ============================= */
+
     /* De 768px a 1199px */
     @media screen and (min-width: 768px) and (max-width: 1199px) {
 
@@ -1575,6 +1578,8 @@
     
     }
 
+/* ============================= */
+
     /* De 1366px a 1599 */
     @media screen and (min-width: 1200px) and (max-width: 1919px) {
         .backgroundMain, .tituloMain {
@@ -1593,7 +1598,9 @@
             width: 38rem;
         }
     }
-    
+
+/* ============================= */
+
     /* De 1920px a  */
     @media screen and (min-width: 1920px) and (max-width: 3750px) {
         .backgroundMain, .tituloMain {

@@ -11,74 +11,74 @@
         height: 100%;
     }
 
-        /* Inicio NavBar */
+    /* Inicio NavBar */
 
-        .navbar-text {
-            text-decoration: none;
-            color: #a9a9a9;
-            font-size: 1.5rem;
-            text-transform: uppercase;
-            margin-left: 1rem;
-        }
+    .navbar-text {
+        text-decoration: none;
+        color: #a9a9a9;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        margin-left: 1rem;
 
-        .navbar-text:hover {
+        &:hover {
             color: #ffffff;
         }
+    }
 
-        .fa-bars, .navbar-toggler:focus{
-            color: #f8f8f8;
-            font-size: 2rem;
-            border-width: none;
-        }
+    .fa-bars, .navbar-toggler:focus {
+        color: #f8f8f8;
+        font-size: 2rem;
+        border-width: none;
+    }
 
-        /* Fin NavBar */
+    /* Fin NavBar */
 
-        /* Inicio CSS Li Container */
+    /* Inicio CSS Li Container */
 
-        .liContainer {
-            display: flex;
-            height: 100%;
-            align-items: center;
-            justify-content: space-evenly;
-            list-style-type: none;
-            flex-wrap: nowrap;
-            background-color: #363940;
-            width: 100%;
-        }
+    .liContainer {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+        list-style-type: none;
+        flex-wrap: nowrap;
+        background-color: #363940;
+        width: 100%;
 
-        .liContainer li a {
-            text-decoration: none;
-            color: #a9a9a9;
-            font-size: 1.5rem;
-            text-transform: uppercase;
-        }
-
-        .liContainer li {
+        li {
             padding-right: 2.5rem;
-        }
 
-        .liContainer li a:hover {
-            color: #ffffff;
-        }
+            a {
+                text-decoration: none;
+                color: #a9a9a9;
+                font-size: 1.5rem;
+                text-transform: uppercase;
 
-        .logoContainer {
-            height: 3rem;
-            width: 80%;
-            margin-left: 5rem;
+                &:hover {
+                    color: #ffffff;
+                }
+            }
         }
+    }
 
-        .logo {
-            height: 3rem;
-            width: 3.5rem;
-            padding: 0rem;
-            display: flex;            
-        }
+    .logoContainer {
+        height: 3rem;
+        width: 80%;
+        margin-left: 5rem;
+    }
 
-        .logo .navbar-text {
+    .logo {
+        height: 3rem;
+        width: 3.5rem;
+        padding: 0rem;
+        display: flex;
+        
+        .navbar-text {
             align-items: center;
         }
+    }
 
-        /* Fin CSS Li Container */
+    /* Fin CSS Li Container */
 
     /* Fin CSS Header */
 

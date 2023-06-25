@@ -49,7 +49,6 @@ p {
         }
 
         .tituloMain {
-
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -97,13 +96,12 @@ p {
             }
         }
         
-        /*** ESTILOS BOTÓN GROW ELLIPSE ***/
         .index-ov-btn-grow-ellipse {
-            background: #fff; /* color de fondo */
-            color: #363940; /* color de fuente */
-            border: 2px solid #505050; /* tamaño y color de borde */
+            background: #fff; 
+            color: #363940; 
+            border: 2px solid #505050; 
             padding: 14px 50px;
-            border-radius: 16px; /* redondear bordes */
+            border-radius: 16px; 
             position: relative;
             z-index: 1;
             overflow: hidden;
@@ -112,12 +110,12 @@ p {
             font-weight: bold;
 
             &:hover {
-                color: #fff;/* color de fuente hover */
+                color: #fff;
             }
 
             &::after {
                 content: "";
-                background: #424242; /* color de fondo hover */
+                background: #424242; 
                 position: absolute;
                 z-index: -1;
                 padding: 16px 20px;
