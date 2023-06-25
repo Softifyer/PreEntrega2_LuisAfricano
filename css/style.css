@@ -1461,7 +1461,7 @@ label {
   /* Inicio Filosofía */
   /* Inicio Filosofía Título */
   .seccionFilosofia {
-    height: 39rem;
+    height: 52rem;
     background-color: #ffffff;
     margin-inline: auto;
     margin-bottom: 2rem;
@@ -1570,7 +1570,7 @@ label {
   /* Fin Contacto Título */
   /* Inicio Info Contacto */
   .seccionInfoContacto {
-    height: 233rem;
+    height: 249rem;
     background-color: #f8f8f8;
     display: flex;
     flex-direction: column;
