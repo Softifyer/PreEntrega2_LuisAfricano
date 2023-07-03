@@ -466,7 +466,8 @@
             flex-direction: column;
             width: 100%;
             margin-left: 0rem;
-            margin-block: 2rem;
+            background-color: #f8f8f8;
+            height: max-content;
 
             span {
                 margin-top: 1rem;
@@ -509,12 +510,13 @@
 
         .formulario {
             display: block;
-            flex-direction: column;
             width: 100%;
-            align-items: center;
             border-inline: none;
-            border-block: 0.2rem solid #505050;
-            padding-bottom: 5rem;
+            padding-bottom: 3rem;
+            height: max-content;
+            text-align: center;
+            font-size: 1.8rem;
+            background-color: #fff;
         }
 
         .formularioContacto {
@@ -533,47 +535,54 @@
 
         /* Fin CSS Formulario */
 
-        .mapa {
+        .infoMapa {
+            background-color: #f8f8f8;
+            height: max-content;
             display: flex;
             flex-direction: column;
             width: 100%;
-            margin-block: 1rem;
             align-items: center;
-        }
+
+            .mapa {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                margin-block: 1rem;
+                align-items: center;
+            }
+
+            .datos {
+                width: 100%;
+    
+                h4 {
+                    font-size: 2rem;
+                    text-align: center;
+                }
+    
+                p {
+                    text-align: center;
+                }
+    
+                a {
+                    text-decoration: none;
+    
+                    &:link, &:visited {
+                        text-decoration: none;
+                        color: #363940;
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }        
 
         iframe {
             display: block;
             margin-top: 1rem;
             max-width: 30rem;
-        }
+        }        
 
-        .datos {
-            width: 100%;
-
-            h4 {
-                text-align: left;
-                font-size: 2rem;
-                text-align: center;
-            }
-
-            p {
-                text-align: left;
-                text-align: center;
-            }
-
-            a {
-                text-decoration: none;
-
-                &:link, &:visited {
-                    text-decoration: none;
-                    color: #363940;
-                    font-size: 2rem;
-                }
-            }
-        }
-
-        input, textarea {
-            width: 35rem;
+        input, textarea, select {
+            width: 27rem;
         }
 
         form {
@@ -953,7 +962,6 @@
             height: 20rem;
             background-color: #ffffff;
             margin-inline: auto;
-            margin-bottom: 2rem;
         }
 
         .seccionContactoTitulo {
@@ -995,6 +1003,8 @@
             width: 100%;
             margin-left: 0rem;
             margin-block: 2rem;
+            height: max-content;
+            background-color: #f8f8f8;
 
             span {
                 margin-top: 1rem;
@@ -1041,8 +1051,10 @@
             width: 100%;
             align-items: center;
             border-inline: none;
-            border-block: 0.2rem solid #505050;
-            padding-bottom: 5rem;
+            padding-bottom: 3rem;
+            text-align: center;
+            font-size: 1.8rem;            
+            background-color: #fff;
         }
 
         .formularioContacto {
@@ -1061,45 +1073,54 @@
 
         /* Fin CSS Formulario */
 
-        .mapa {
+        .infoMapa {
+            background-color: #f8f8f8;
+            height: 82rem;
             display: flex;
             flex-direction: column;
             width: 100%;
-            margin-block: 0rem;
             align-items: center;
-        }
+
+            .mapa {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                margin-block: 0rem;
+                align-items: center;
+                margin-bottom: 2rem;
+            }
+
+            .datos {
+
+                h4 {
+                    font-size: 2rem;
+                    text-align: center;                
+                }
+    
+                p {
+                    text-align: center;
+                }
+    
+                a {
+                    text-decoration: none;
+    
+                    &:link, &:visited {
+                        text-decoration: none;
+                        color: #363940;
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }        
 
         iframe {
             display: block;
             margin-top: 1rem;
-            max-width: 60rem;
-        }
+            max-width: 45rem;
+        }        
 
-        .datos {
-            width: 100%;
-
-            h4 {
-                text-align: left;
-                font-size: 2rem;
-            }
-
-            p {
-                text-align: left;
-            }
-
-            a {
-                text-decoration: none;
-
-                &:link, &:visited {
-                    text-decoration: none;
-                    color: #363940;
-                    font-size: 2rem;
-                }
-            }
-        }
-
-        input, textarea {
-            width: 35rem;
+        input, textarea, select {
+            width: 45rem;
         }
 
         form {
@@ -1438,21 +1459,48 @@
             flex-wrap: wrap;
         }
 
+        .mainContacto {
+            height: max-content;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        #seccionRRSS {
+            padding-top: 0.5rem;
+            background-color: #f8f8f8;
+        }
+
         .infoGeneral {
             display: flex;
-            flex-direction: column;
-            width: 100%;
+            width: 50%;
             margin-left: 0rem;
-            margin-block: 2rem;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            background-color: #f8f8f8;
 
             span {
                 margin-top: 1rem;
+                margin-inline: 3rem;
             }
 
             .text-center {
                 p{
                     margin-bottom: 2rem;
                 }
+            }
+        }
+
+        .infoMapa {        
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            margin-block: 0rem;
+            background-color: #fff;
+
+            .datos {
+                margin-top: 2rem;
             }
         }
 
@@ -1485,13 +1533,17 @@
         }
 
         .formulario {
-            display: block;
+            display: flex;
             flex-direction: column;
-            width: 100%;
+            width: 50%;
             align-items: center;
             border-inline: none;
-            border-block: 0.2rem solid #505050;
+            border-inline: 0.2rem solid #505050;
             padding-bottom: 5rem;
+            flex-wrap: nowrap;
+            background-color: #f8f8f8;
+            text-align: center;
+            font-size: 1.8rem;
         }
 
         .formularioContacto {
@@ -1521,19 +1573,19 @@
         iframe {
             display: block;
             margin-top: 1rem;
-            max-width: 35rem;
+            width: 60rem;
         }
 
         .datos {
             width: 100%;
 
             h4 {
-                text-align: left;
+                text-align: center;
                 font-size: 2rem;
             }
 
             p {
-                text-align: left;
+                text-align: center;
             }
 
             a {
@@ -1547,7 +1599,7 @@
             }
         }
 
-        input, textarea {
+        input, textarea, select {
             width: 35rem;
         }
 
@@ -1608,7 +1660,7 @@
         .infoContacto {
             display: flex;
             flex-direction: column;
-            width: 50%;
+            width: 80%;
             flex-wrap: nowrap;
             justify-content: center;
             align-items: center;
@@ -1637,6 +1689,67 @@
         iframe {
             width: 38rem;
         }
+
+        .mainContacto {
+            height: max-content;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .infoGeneral {
+            display: flex;
+            width: 33.3%;
+            margin-left: 0rem;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            background-color: #f8f8f8;
+
+            span {
+                    margin-top: 1rem;
+                    margin-inline: 3rem;
+
+                    .text-center {
+                        p {
+                            margin-inline: 3rem;
+                        }
+                    }
+                }
+        }
+
+        .formulario {
+            display: flex;
+            flex-direction: column;
+            width: 33.3%;
+            align-items: center;
+            border-inline: 0.2rem solid #505050;
+            background-color: #f8f8f8;
+            text-align: center;
+            font-size: 1.8rem;
+        }
+
+        .formularioContacto {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            margin-top: 3rem;
+            flex-wrap: nowrap;
+            justify-content: center;
+        }
+
+        .infoMapa {
+            display: flex;
+            flex-direction: column;
+            width: 33.3%;
+            align-items: center;
+            background-color: #f8f8f8;
+        }
+
+        input, textarea, select {
+            width: 32rem;
+        }
+
     }
 
 /* ============================= */

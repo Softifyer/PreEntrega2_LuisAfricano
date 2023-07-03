@@ -6,7 +6,6 @@
         height: 20rem;
         background-color: #ffffff;
         margin-inline: auto;
-        margin-bottom: 2rem;
     }
 
     .seccionContactoTitulo {
@@ -35,22 +34,32 @@
     /* Inicio Info Contacto */
 
     .seccionInfoContacto {
-        height: 85rem;
+        height: 89rem;
         background-color: #f8f8f8;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
 
+    .mainContacto {
+        height: max-content;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 85rem;
+    }
+
     .infoGeneral {
         display: flex;
+        width: 33.3%;
+        margin-left: 0rem;
         flex-direction: column;
-        width: 30%;
-        margin-left: 5rem;
-        margin-block: 2rem;
+        flex-wrap: nowrap;
+        background-color: #f8f8f8;
 
         span {
-            margin-top: 5rem;
+            margin-top: 1rem;
+            margin-inline: 3rem;
         }
 
         .text-center {
@@ -73,11 +82,6 @@
 
     /* Inicio CSS Formulario */
 
-    .formulario {
-        text-align: center;
-        font-size: 1.8rem;
-    }
-
     .botonFormulario {
         color: #363940;
         font-size: 1.5rem;
@@ -98,7 +102,9 @@
         width: 33.3%;
         align-items: center;
         border-inline: 0.2rem solid #505050;
-        margin-block: 2rem;
+        background-color: #f8f8f8;
+        text-align: center;
+        font-size: 1.8rem;
     }
 
     .formularioContacto {
@@ -115,10 +121,42 @@
 
     /* Fin CSS Formulario */
 
-    .mapa {
+    .infoMapa {        
         display: flex;
         flex-direction: column;
         width: 33.3%;
+        align-items: center;
+        background-color: #f8f8f8;
+
+        .datos {
+            h4 {
+                font-size: 2rem;
+                text-align: center;
+            }
+            p {
+                font-size: 2rem;
+                text-align: center;
+            }
+        }
+    }
+
+    .tituloMapa {
+        h3 {
+            display: block;
+            color: #363940;
+            text-transform: uppercase;
+            font-size: 2.3rem;
+            margin-top: 5rem;
+            font-weight: bold;
+            text-align: center;
+            height: 5rem;
+        }        
+    }
+
+    .mapa {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
         margin-block: 2rem;
         align-items: center;
         
@@ -139,7 +177,7 @@
         width: 100%;
     }
 
-    input, textarea {
+    input, textarea, select {
         width: 40rem;
     }
 
@@ -318,7 +356,8 @@
                 }
             }
         }
-    }        
+    }
+
 
     /* Fin Sección RRSS */
 
