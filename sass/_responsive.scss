@@ -537,14 +537,14 @@
             display: flex;
             flex-direction: column;
             width: 100%;
-            margin-block: 0rem;
+            margin-block: 1rem;
             align-items: center;
         }
 
         iframe {
             display: block;
             margin-top: 1rem;
-            max-width: 35rem;
+            max-width: 30rem;
         }
 
         .datos {
@@ -553,10 +553,12 @@
             h4 {
                 text-align: left;
                 font-size: 2rem;
+                text-align: center;
             }
 
             p {
                 text-align: left;
+                text-align: center;
             }
 
             a {
@@ -635,6 +637,44 @@
             flex-wrap: nowrap;
             justify-content: center;
             align-items: center;
+        }
+
+        .ov-btn-grow-ellipse {
+            background: #fff; 
+            color: #363940; 
+            border: 2px solid #505050; 
+            padding: 6px 31px;
+            border-radius: 16px; 
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+            display: inline-block;
+            margin-inline: 1rem;
+    
+            &:hover {
+                color: #fff;
+            }
+    
+            &::after {
+                content: "";
+                background: #363940; 
+                position: absolute;
+                z-index: -1;
+                padding: 16px 20px;
+                display: block;
+                border-radius: 50%;
+                left: -50%;
+                right: -50%;
+                top: -150%;
+                bottom: -150%;
+                transform: scale(0, 0);
+                transition: all 0.3s ease;
+            }
+    
+            &:hover::after {
+                transition: all 0.3s ease-out;
+                transform: scale(1, 1);
+            }
         }
 
         /* Fin Sección RRSS */
@@ -1032,7 +1072,7 @@
         iframe {
             display: block;
             margin-top: 1rem;
-            max-width: 35rem;
+            max-width: 60rem;
         }
 
         .datos {
